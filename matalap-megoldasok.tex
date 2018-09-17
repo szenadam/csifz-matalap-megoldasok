@@ -1,11 +1,33 @@
-\documentclass[12pt]{article}
+\documentclass[12pt,a4paper,fleqn]{article}
+\usepackage[a4paper,left=3cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\setlength{\mathindent}{0pt}
 
-
+\author{Et Alii}
 \pagestyle{headings}
 
 \title{Matemematikai Alapok \\ \textbf{Megoldások}}
+
 \begin{document}
 \maketitle
+\newpage
 
-\section{Fejezet}
+\section{Algebrai és Gyökös kifejezések I.}
+\subsection{Feladatok}
+\subsubsection{Órai feladatok}
+3. (b)
+
+\begin{flalign*}
+  & \frac{a}{a^3+a^2b+ab^2+b^3} + \frac{b}{a^3-a^2b+ab^2-b^3} + \frac{1}{a^2-b^2} - \frac{1}{a^2+b^2} - \frac{a^2+3b^2}{a^4-b^4} = 0  \\\\
+  & \frac{a}{a^2(a+b)+b^2(a+b)} + \frac{b}{a^2(a-b)+b^2(a-b)} + \frac{1}{(a+b)(a-b)} - \frac{1}{a^2+b^2} - \frac{a^2+3b^2}{(a^2-b^2)(a^2+b^2)} = 0 \\\\
+  & \frac{a}{(a+b)(a^2+b^2)} + \frac{b}{(a-b)(a^2+b^2)} + \frac{1}{(a+b)(a-b)} - \frac{1}{a^2+b^2} - \frac{a^2+3b^2}{(a+b)(a-b)(a^2+b^2)} = 0 \\\\
+  & \frac{a(a-b)+b(a+b)+(a^2+b^2)-(a+b)(a-b)-(a^2+3b^2)}{(a+b)(a-b)(a^2+b^2)} = 0 \\\\
+  & \frac{a^2-ab+ab+b^2+a^2+b^2-a^2+b^2-a^2-3b^2}{(a+b)(a-b)(a^2+b^2)} = 0
+\end{flalign*}
+% $$ \frac{a}{a^3+a^2b+ab^2+b^3} + \frac{b}{a^3-a^2b+ab^2-b^3} + \frac{1}{a^2-b^2} - \frac{1}{a^2+b^2} - \frac{a^2+3b^2}{a^4-b^4} = 0 $$
+% $$ \frac{a}{a^2(a+b)+b^2(a+b)} + \frac{b}{a^2(a-b)+b^2(a-b)} + \frac{1}{(a+b)(a-b)} - \frac{1}{a^2+b^2} - \frac{a^2+3b^2}{(a^2-b^2)(a^2+b^2)} = 0 $$
+% $$ \frac{a}{(a+b)(a^2+b^2)} + \frac{b}{(a-b)(a^2+b^2)} + \frac{1}{(a+b)(a-b)} - \frac{1}{a^2+b^2} - \frac{a^2+3b^2}{(a+b)(a-b)(a^2+b^2)} = 0 $$
+% $$ \frac{a(a-b)+b(a+b)+(a^2+b^2)-(a+b)(a-b)-(a^2+3b^2)}{(a+b)(a-b)(a^2+b^2)} = 0$$
+% $$ \frac{a^2-ab+ab+b^2+a^2+b^2-a^2+b^2-a^2-3b^2}{(a+b)(a-b)(a^2+b^2)} = 0$$
 \end{document}
