@@ -1,1 +1,1 @@
-# csifz-matalap-megoldasok
+### MATEMATIKAI ALAPOK - **MEGOLDÁSOK**
