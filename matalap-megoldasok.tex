@@ -2,28 +2,61 @@
 \usepackage[a4paper,left=3cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
 \usepackage{amsfonts}
 \usepackage{mathtools}
+\usepackage{fancyhdr}
 \setlength{\mathindent}{0pt}
 
 \author{Et Alii}
-\pagestyle{headings}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\leftmark}
+\rhead{\thepage}
 
-\title{Matemematikai Alapok \\ \textbf{Megoldások}}
+\title{Matematikai Alapok \\ \textbf{Megoldások}}
 
 \begin{document}
 \maketitle
 \newpage
 
 \section{Algebrai és Gyökös kifejezések I.}
+\setcounter{subsection}{1}
 \subsection{Feladatok}
 \subsubsection{Órai feladatok}
-3. (b)
-
+\textbf{3. (b)}
 \begin{flalign*}
   & \frac{a}{a^3+a^2b+ab^2+b^3} + \frac{b}{a^3-a^2b+ab^2-b^3} + \frac{1}{a^2-b^2} - \frac{1}{a^2+b^2} - \frac{a^2+3b^2}{a^4-b^4} = 0  \\\\
   & \frac{a}{a^2(a+b)+b^2(a+b)} + \frac{b}{a^2(a-b)+b^2(a-b)} + \frac{1}{(a+b)(a-b)} - \frac{1}{a^2+b^2} - \frac{a^2+3b^2}{(a^2-b^2)(a^2+b^2)} = 0 \\\\
   & \frac{a}{(a+b)(a^2+b^2)} + \frac{b}{(a-b)(a^2+b^2)} + \frac{1}{(a+b)(a-b)} - \frac{1}{a^2+b^2} - \frac{a^2+3b^2}{(a+b)(a-b)(a^2+b^2)} = 0 \\\\
   & \frac{a(a-b)+b(a+b)+(a^2+b^2)-(a+b)(a-b)-(a^2+3b^2)}{(a+b)(a-b)(a^2+b^2)} = 0 \\\\
   & \frac{a^2-ab+ab+b^2+a^2+b^2-a^2+b^2-a^2-3b^2}{(a+b)(a-b)(a^2+b^2)} = 0
-\end{flalign*}
+\end{flalign*} \\
+\textbf{4. (a)}
+\begin{enumerate}
+  \item Első lehetőség: $a+b+c=0$ kiemelhető így $(a+b+c) \cdot (a^2+b^2-ab)$
+  \item Második lehetőség: $(a+b+c)$-ből kifejezzük az egyiket $\rightarrow c = -a - b$ és ezt kell behelyettesíteni. \\
+  $a^3 + a^2(-a-b) -ab(-a-b) + b^2(-a-b) + b^3$ \\
+  $ = a^3 - a^3 - a^2b + a^2b +ab^2 - ab^2 - b^3 + b^3$ \\
+  $ = 0$ \\
+\end{enumerate}
+\textbf{6.} \\\\
+$$ \dfrac{x^3-x-y^3+y+xy^2-x^2y}{x^3+x-y^3-y+xy^2-x^2y} =
+  \dfrac{xy(y-x)+(y-x)+(x-y)(x^2+xy+y^2)}{xy(y-x)-(y-x)+(x-y)(x^2+xy+y^2)} $$
+  $$= \dfrac{(y-x)(xy+1-x^2-y^2-xy)}{(y-x)(xy-1-x^2-y^2-xy)}
+  = \dfrac{1-x^2-y^2}{-1-x^2-y^2} = \dfrac{-1(-1+x^2+y^2)}{-1(1+x^2+y^2)} = \dfrac{x^2+y^2-1}{x^2+y^2+1}$$
+Ha $x = \dfrac{k(1-z^2)}{(1+z^2)}$ akkor $y = \dfrac{2k \cdot z}{1+z^2}$.
+Bizonyítsuk be hogy behelyettesítés után a kifejezés nem függ a $z$ értékétől (vagyis ki fog esni)!
+$$ \dfrac{x^2+y^2-1}{x^2+y^2+1} = \dfrac{x^2+y^2+1-2}{x^2+y^2+1} = 1 - \dfrac{2}{x^2+y2+1} $$
+Behelyettesítve:
+$$ x^2+y=\dfrac{(k(1-z^2))^2}{(1+z^2)^2} + \dfrac{(2kz)^2}{(1+z^2)^2} = \dfrac{k^2(1-z^2)^2+4k^2z^2}{(1+z^2)^2}$$
+$$ = \dfrac{k^2(1+z^4-2z^2+4z^2)}{(1+z^2)^2} = \dfrac{k^2(z^2+1)^2}{(1+z^2)^2} = k^2$$
+Így $1-\dfrac{2}{k^2+1}$ ami valóban független a $z$-től. \\\\
+\textbf{12. (c)} \\\\
+$$ \left(\sqrt{x} - \dfrac{\sqrt{xy}+y}{\sqrt{x}+\sqrt{y}}\right) \cdot \left( \dfrac{\sqrt{x}}{\sqrt{x}+\sqrt{y}} + \dfrac{\sqrt{y}}{\sqrt{x}-\sqrt{y}} + \dfrac{2\sqrt{xy}}{x-y} \right) $$
+$$ = \left(\dfrac{\sqrt{x}(\sqrt{x}+\sqrt{y})-(\sqrt{xy}+y)}{\sqrt{x} + \sqrt{y}} \right) \cdot \left( \dfrac{\sqrt{x}(\sqrt{x}-\sqrt{y})+\sqrt{y}(\sqrt{x}+\sqrt{y})+2\sqrt{xy}}{(\sqrt{x}-\sqrt{y})(\sqrt{x}+\sqrt{y})} \right)$$
+$$ = \left( \dfrac{x-y}{\sqrt{x}+\sqrt{y}} \right) \cdot \left( \dfrac{x-\sqrt{xy}+\sqrt{xy}+y+2\sqrt{xy}}{(\sqrt{x}-\sqrt{y})(\sqrt{x}+\sqrt{y})} \right)$$
+$$ = \left( \dfrac{x-y}{\sqrt{x}+\sqrt{x}} \cdot \left( \dfrac{x+y+2\sqrt{xy}}{(\sqrt{x}-\sqrt{y})(\sqrt{x}+\sqrt{y})} \right) \right) = \left( \dfrac{x-y}{\sqrt{x}+\sqrt{y}} \cdot \left( \dfrac{(\sqrt{x}+\sqrt{y})^2}{(\sqrt{x}+\sqrt{y})(\sqrt{x}-\sqrt{y})} \right) \right)$$
+$$ = \dfrac{x-y}{\sqrt{x} - \sqrt{y}} = \sqrt{x} + \sqrt{y}$$ (mert: $x-y=(\sqrt{x}-\sqrt{y}(\sqrt{x}+\sqrt{x}))$)
+
 
 \end{document}
+
+
