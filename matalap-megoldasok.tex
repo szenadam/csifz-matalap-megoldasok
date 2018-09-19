@@ -3,6 +3,7 @@
 \usepackage{amsfonts}
 \usepackage{mathtools}
 \usepackage{fancyhdr}
+\usepackage{enumerate}
 \setlength{\mathindent}{0pt}
 
 \author{Et Alii}
@@ -69,7 +70,31 @@ $ (x-3)(ax^2+bx+c) = ax^3+bx^2+cx-3ax^2-3vx-3c = ax^3+(b-3a)x^2+(c-3b)x-3c $ \\
 \textbf{19. (c)} \\\\
 $2x^4-5x^3-6x^2+3x+2 \quad x_0=-1 \Longrightarrow (x+1)(2x^3-7x^2+x+2)$
 
+\section{Másodfokú egyenletek, egyenlőtlenségek}
+\setcounter{subsection}{1}
+\subsection{Feladatok}
+\subsubsection{Órai feladatok}
+\textbf{3. (b)} \\\\
+$$ \dfrac{3x^2+7x-4}{x^2+2x-3} < 2 $$
+\begin{enumerate}[i.]
+  \item ha $x^2+2x-3 > 0$ \\
+  $x^2+2x-3 = (x+3)(x-1)$ ha $x>1$ vagy $x<-3$ \\
+  $3x^2+7x-4 < 2x^2+4x-6$ \\
+  $x^2 + 3x + 2 < 0 \Rightarrow x_1=-1$ és $x_2=-2$. $x \in (-2, -1)$ ez nem megoldás mert a kettnek nincs közös része.
+  \item ha $x^2+2x-3 < 0$: $x \in (-3, 1)$ \\
+  $x^2+3x+2 > 0$: $x<-2$ vagy $x>-1$ \\
+  $x \in (-3, -2)$ vagy $x \in (-1, 1)$
+\end{enumerate}
+\textbf{4. (c)} \\\\
+$$ (p^2-1)x^2 + 2(p-1)x + 1 > 0 $$
+Ha $p=1$ akkor teljesűl.
+Ha a függvény grafikonja metszi az $x$ tengelyt van gyöke. Ha két helyen metszi két gyöke van.
+Ha a diszkrimináns kisebb mint 0 nincs megoldása. Ha pozitív akkor két megoldása van. Ha nulla akkor egy az $\mathbb{R}$-ben \\
+$b^2-4ac=(2(p-1))^2-3 \cdot 1 \cdot (p^2)-1 < 0$ \\
+$ 4(p-1)^2 - 4(p^2 - 1) < 0 $ \\
+$ 4(p^2 - 2p + 1) - 4p^2 + 4 < 0 $ \\
+$ 4p^2 - 8p + 4 - 4p^2 + 4 < 0 $ \\
+$ -8p + 8 < 0 $ \\
+$ 1 < p $ Ekkor negatív a diszkrimináns tehát nem lesz megoldás.
 
 \end{document}
-
-
