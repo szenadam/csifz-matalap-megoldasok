@@ -28,22 +28,26 @@
 \maketitle
 \newpage
 
+
+
 \section{Algebrai és Gyökös kifejezések I.}
 \setcounter{subsection}{1}
 \subsection{Feladatok}
 \subsubsection{Órai feladatok}
 
+
 \myparagraph{3. (b)}
 \begin{flalign*}
-  & \frac{a}{a^3+a^2b+ab^2+b^3} + \frac{b}{a^3-a^2b+ab^2-b^3} + \frac{1}{a^2-b^2} - \frac{1}{a^2+b^2}
-    - \frac{a^2+3b^2}{a^4-b^4} = 0  \\
-  & \frac{a}{a^2(a+b)+b^2(a+b)} + \frac{b}{a^2(a-b)+b^2(a-b)} + \frac{1}{(a+b)(a-b)} - \frac{1}{a^2+b^2}
-    - \frac{a^2+3b^2}{(a^2-b^2)(a^2+b^2)} = 0 \\
-  & \frac{a}{(a+b)(a^2+b^2)} + \frac{b}{(a-b)(a^2+b^2)} + \frac{1}{(a+b)(a-b)} - \frac{1}{a^2+b^2}
-    - \frac{a^2+3b^2}{(a+b)(a-b)(a^2+b^2)} = 0 \\
+  & \frac{a}{a^3+a^2b+ab^2+b^3} + \frac{b}{a^3-a^2b+ab^2-b^3} + \frac{1}{a^2-b^2} -
+  \frac{1}{a^2+b^2} - \frac{a^2+3b^2}{a^4-b^4} = 0  \\
+  & \frac{a}{a^2(a+b)+b^2(a+b)} + \frac{b}{a^2(a-b)+b^2(a-b)} + \frac{1}{(a+b)(a-b)} -
+  \frac{1}{a^2+b^2} - \frac{a^2+3b^2}{(a^2-b^2)(a^2+b^2)} = 0 \\
+  & \frac{a}{(a+b)(a^2+b^2)} + \frac{b}{(a-b)(a^2+b^2)} + \frac{1}{(a+b)(a-b)} -
+    \frac{1}{a^2+b^2} - \frac{a^2+3b^2}{(a+b)(a-b)(a^2+b^2)} = 0 \\
   & \frac{a(a-b)+b(a+b)+(a^2+b^2)-(a+b)(a-b)-(a^2+3b^2)}{(a+b)(a-b)(a^2+b^2)} = 0 \\\\
   & \frac{a^2-ab+ab+b^2+a^2+b^2-a^2+b^2-a^2-3b^2}{(a+b)(a-b)(a^2+b^2)} = 0
 \end{flalign*}
+
 
 \myparagraph{4. (a)}
 \begin{enumerate}
@@ -53,6 +57,7 @@
   \[ a^3 + a^2(-a-b) -ab(-a-b) + b^2(-a-b) + b^3 = \]
   \[ a^3 - a^3 - a^2b + a^2b +ab^2 - ab^2 - b^3 + b^3 = 0 \]
 \end{enumerate}
+
 
 \myparagraph{6.}
 \[ \dfrac{x^3-x-y^3+y+xy^2-x^2y}{x^3+x-y^3-y+xy^2-x^2y} =
@@ -66,20 +71,29 @@ után a kifejezés nem függ a $z$ értékétől (vagyis ki fog esni)!
 \[ \dfrac{x^2+y^2-1}{x^2+y^2+1} = \dfrac{x^2+y^2+1-2}{x^2+y^2+1} = 1 - \dfrac{2}{x^2+y2+1} \]
 
 Behelyettesítve:
-\[ x^2+y=\dfrac{(k(1-z^2))^2}{(1+z^2)^2} + \dfrac{(2kz)^2}{(1+z^2)^2} = \dfrac{k^2(1-z^2)^2+4k^2z^2}{(1+z^2)^2} \]
+\[ x^2+y=\dfrac{(k(1-z^2))^2}{(1+z^2)^2} + \dfrac{(2kz)^2}{(1+z^2)^2} =
+  \dfrac{k^2(1-z^2)^2+4k^2z^2}{(1+z^2)^2} \]
 \[ = \dfrac{k^2(1+z^4-2z^2+4z^2)}{(1+z^2)^2} = \dfrac{k^2(z^2+1)^2}{(1+z^2)^2} = k^2 \]
 
 Így $1-\dfrac{2}{k^2+1}$ ami valóban független a $z$-től.
+
+
 \myparagraph{12. (c)}
-\[ \left(\sqrt{x} - \dfrac{\sqrt{xy}+y}{\sqrt{x}+\sqrt{y}}\right) \cdot \left( \dfrac{\sqrt{x}}{\sqrt{x}+\sqrt{y}} +
-  \dfrac{\sqrt{y}}{\sqrt{x}-\sqrt{y}} + \dfrac{2\sqrt{xy}}{x-y} \right) = \]
+\[ \left(\sqrt{x} - \dfrac{\sqrt{xy}+y}{\sqrt{x}+\sqrt{y}}\right) \cdot
+  \left( \dfrac{\sqrt{x}}{\sqrt{x}+\sqrt{y}} + \dfrac{\sqrt{y}}{\sqrt{x}-\sqrt{y}} +
+  \dfrac{2\sqrt{xy}}{x-y} \right) = \]
 \[ \left(\dfrac{\sqrt{x}(\sqrt{x}+\sqrt{y})-(\sqrt{xy}+y)}{\sqrt{x} + \sqrt{y}} \right) \cdot
-  \left( \dfrac{\sqrt{x}(\sqrt{x}-\sqrt{y})+\sqrt{y}(\sqrt{x}+\sqrt{y})+2\sqrt{xy}}{(\sqrt{x}-\sqrt{y})(\sqrt{x}+\sqrt{y})} \right) = \]
-\[ \left( \dfrac{x-y}{\sqrt{x}+\sqrt{y}} \right) \cdot \left( \dfrac{x-\sqrt{xy}+\sqrt{xy}+y+2\sqrt{xy}}{(\sqrt{x}-\sqrt{y})(\sqrt{x}+\sqrt{y})} \right) =
-  \dfrac{x-y}{\sqrt{x}+\sqrt{x}} \cdot \left( \dfrac{x+y+2\sqrt{xy}}{(\sqrt{x}-\sqrt{y})(\sqrt{x}+\sqrt{y})} \right) \]
-\[ = \dfrac{x-y}{\sqrt{x}+\sqrt{y}} \cdot \left( \dfrac{(\sqrt{x}+\sqrt{y})^2}{(\sqrt{x}+\sqrt{y})(\sqrt{x}-\sqrt{y})} \right) =
+  \left( \dfrac{\sqrt{x}(\sqrt{x}-\sqrt{y})+\sqrt{y}(\sqrt{x}+\sqrt{y})+
+  2\sqrt{xy}}{(\sqrt{x}-\sqrt{y})(\sqrt{x}+\sqrt{y})} \right) = \]
+\[ \left( \dfrac{x-y}{\sqrt{x}+\sqrt{y}} \right) \cdot \left(
+  \dfrac{x-\sqrt{xy}+\sqrt{xy}+y+2\sqrt{xy}}{(\sqrt{x}-\sqrt{y})(\sqrt{x}+\sqrt{y})} \right) =
+  \dfrac{x-y}{\sqrt{x}+\sqrt{x}} \cdot \left( \dfrac{x+y+2\sqrt{xy}}{(\sqrt{x}-
+  \sqrt{y})(\sqrt{x}+\sqrt{y})} \right) \]
+\[ = \dfrac{x-y}{\sqrt{x}+\sqrt{y}} \cdot \left(
+  \dfrac{(\sqrt{x}+\sqrt{y})^2}{(\sqrt{x}+\sqrt{y})(\sqrt{x}-\sqrt{y})} \right) =
   \dfrac{x-y}{\sqrt{x} - \sqrt{y}} = \sqrt{x} + \sqrt{y} \]
 ( mert: $x-y=(\sqrt{x}-\sqrt{y})(\sqrt{x}+\sqrt{y})$ )
+
 
 \myparagraph{19. (a)}
 \[ x_0 = 2 \quad P(x)=3x^2 - 7x + 2 \]
@@ -89,18 +103,24 @@ Behelyettesítve:
 \[ 3x^2-7x+2 \quad x_0=2 \]
 \[ 3x^2-7x+2=(x-2)(3x-1) \]
 
+
 \myparagraph{19. (b)}
 \[ x_0 \quad 2x^3-4x^2-18 = (x-3)(...) \]
 \[ (x-3)(ax^2+bx+c) = ax^3+bx^2+cx-3ax^2-3vx-3c = ax^3+(b-3a)x^2+(c-3b)x-3c \]
-Így $a=2$, $b=7$ és $b-3a=4$ vagy $c-3b=0 \Rightarrow b=2 \Longrightarrow (2x^2+2x+6) \Rightarrow (x-3)(2x^2+6x+2)$
+Így $a=2$, $b=7$ és $b-3a=4$ vagy $c-3b=0 \Rightarrow b=2 \Longrightarrow
+  (2x^2+2x+6) \Rightarrow (x-3)(2x^2+6x+2)$
+
 
 \myparagraph{19. (c)}
 \[ 2x^4-5x^3-6x^2+3x+2 \quad x_0=-1 \Longrightarrow (x+1)(2x^3-7x^2+x+2) \]
+
+
 
 \section{Másodfokú egyenletek, egyenlőtlenségek}
 \setcounter{subsection}{1}
 \subsection{Feladatok}
 \subsubsection{Órai feladatok}
+
 
 \myparagraph{3. (b)}
 \[ \dfrac{3x^2+7x-4}{x^2+2x-3} < 2 \]
@@ -108,44 +128,55 @@ Behelyettesítve:
   \item ha $x^2+2x-3 > 0$
   \[ x^2+2x-3 = (x+3)(x-1)$ ha $x>1$ vagy $x<-3 \]
   \[ 3x^2+7x-4 < 2x^2+4x-6 \]
-  $x^2 + 3x + 2 < 0 \Rightarrow x_1=-1$ és $x_2=-2$. $x \in (-2, -1)$ ez nem megoldás mert a kettőnek nincs közös része.
+  $x^2 + 3x + 2 < 0 \Rightarrow x_1=-1$ és $x_2=-2$. $x \in (-2, -1)$ ez nem megoldás
+  mert a kettőnek nincs közös része.
   \item ha $x^2+2x-3 < 0$: $x \in (-3, 1)$ \\
   $x^2+3x+2 > 0$: $x<-2$ vagy $x>-1$ \\
   $x \in (-3, -2)$ vagy $x \in (-1, 1)$
 \end{enumerate}
 
+
 \myparagraph{4. (c)}
-$$ (p^2-1)x^2 + 2(p-1)x + 1 > 0 $$
+\[ (p^2-1)x^2 + 2(p-1)x + 1 > 0 \]
 Ha $p=1$ akkor teljesűl.
 Ha a függvény grafikonja metszi az $x$ tengelyt van gyöke. Ha két helyen metszi két gyöke van.
-Ha a diszkrimináns kisebb mint 0 nincs megoldása. Ha pozitív akkor két megoldása van. Ha nulla akkor egy az $\mathbb{R}$-ben \\
-$b^2-4ac=(2(p-1))^2-3 \cdot 1 \cdot (p^2)-1 < 0$ \\
-$ 4(p-1)^2 - 4(p^2 - 1) < 0 $ \\
-$ 4(p^2 - 2p + 1) - 4p^2 + 4 < 0 $ \\
-$ 4p^2 - 8p + 4 - 4p^2 + 4 < 0 $ \\
-$ -8p + 8 < 0 $ \\
+Ha a diszkrimináns kisebb mint 0 nincs megoldása. Ha pozitív akkor két megoldása van.
+Ha nulla akkor egy az $\mathbb{R}$-ben.
+\[ b^2-4ac=(2(p-1))^2-3 \cdot 1 \cdot (p^2)-1 < 0 \]
+\[ 4(p-1)^2 - 4(p^2 - 1) < 0 \]
+\[ 4(p^2 - 2p + 1) - 4p^2 + 4 < 0 \]
+\[ 4p^2 - 8p + 4 - 4p^2 + 4 < 0 \]
+\[ -8p + 8 < 0 \]
 $ 1 < p $ Ekkor negatív a diszkrimináns tehát nem lesz megoldás.
+
+
 
 \section{Algebrai és gyökös kifejezések II.}
 \setcounter{subsection}{1}
 \subsection{Feladatok}
 \subsubsection{Órai feladatok}
 
+
 \myparagraph{1. (c)}
-$$ \dfrac{2x^2-13x-7}{8x^3+1} = \dfrac{(x-7)(2x+1)}{(2x+1)(4x^2-2x+1)} = \dfrac{(x-7)}{(x^2-2x+1)}$$
-$2x^2-13x-7=0 \rightarrow x_1 = 7$, $x_2 = -\dfrac{1}{2}$ \\
-$2x^2-13x-7=2(x-7)(x+\dfrac{1}{2})=(x-7)(2x+1)$ \\
-$ 8x^3 + 1 = (2x)^3 + (1)^3 = (2x+1)(4x^2-2x+1)$ \\\\
+\[ \dfrac{2x^2-13x-7}{8x^3+1} = \dfrac{(x-7)(2x+1)}{(2x+1)(4x^2-2x+1)} = \dfrac{(x-7)}{(x^2-2x+1)} \]
+\[ 2x^2-13x-7=0 \rightarrow x_1 = 7$, $x_2 = -\dfrac{1}{2} \]
+\[ 2x^2-13x-7=2(x-7)(x+\dfrac{1}{2})=(x-7)(2x+1) \]
+\[ 8x^3 + 1 = (2x)^3 + (1)^3 = (2x+1)(4x^2-2x+1) \]
+
+
 \myparagraph{1. (e)}
 \begin{align*}
   \begin{split}
-    & \dfrac{2}{x^2-1} -\dfrac{3}{x^3-1} = \dfrac{2}{(x-1)(x+1)} - \dfrac{3}{(x-1)(x^2+x+1)} = \dfrac{2(x^2+x+1)-3(x+1)}{(x-1)(x+1)(x^2+x+1)} \\[10pt]
+    & \dfrac{2}{x^2-1} -\dfrac{3}{x^3-1} = \dfrac{2}{(x-1)(x+1)} - \dfrac{3}{(x-1)(x^2+x+1)} =
+        \dfrac{2(x^2+x+1)-3(x+1)}{(x-1)(x+1)(x^2+x+1)} \\[10pt]
     &= \dfrac{2x^2+2x+2-3x-3}{(x-1)(x+1)(x^2+x+1)} = \dfrac{2x^2-x-1}{(x-1)(x+1)(x^2+x+1)} \\[10pt]
     &= \dfrac{2(x-1)(x+\dfrac{1}{2})}{(x-1)(x+1)(x^2+x+1)} = \dfrac{2x+1}{(x+1)(x^2+x+1)}
   \end{split}
 \end{align*}
+
+
 \myparagraph{3. (b)}
-$|2x-7|-|2x+7|=x+15 \quad x \in \mathbb{R}$
+\[ |2x-7|-|2x+7|=x+15 \quad x \in \mathbb{R} \]
 \begin{enumerate}
   \item eset: mindkettő negatív
   \begin{align*}
@@ -155,7 +186,7 @@ $|2x-7|-|2x+7|=x+15 \quad x \in \mathbb{R}$
       &\Longrightarrow x \in (-\infty, \dfrac{7}{2})
     \end{split}
   \end{align*}
-  \item eset
+  \item eset: mindkettő pozitív
   \begin{align*}
     \begin{split}
       &2x + 7 \geq 0 \Rightarrow x \geq -\dfrac{7}{2} \\
@@ -163,12 +194,12 @@ $|2x-7|-|2x+7|=x+15 \quad x \in \mathbb{R}$
       &\Longrightarrow x \in [\dfrac{7}{2}, \infty)
     \end{split}
   \end{align*}
-  \item eset ($2x+7$ biztos hogy nagyobb mint $2x-7$) \\
-  $2x-7<0$ és $2x+7 \geq 0 \Rightarrow x \in \left[ -\dfrac{7}{2}, \dfrac{7}{2} \right)$
+  \item eset ($2x+7$ biztos hogy nagyobb mint $2x-7$)
+  \[ 2x-7<0$ és $2x+7 \geq 0 \Rightarrow x \in \left[ -\dfrac{7}{2}, \dfrac{7}{2} \right) \]
 \end{enumerate}
 Kiszámoljuk
 \begin{enumerate}
-  \item esetet: ($-1$-szeresét kell venni mert negatív) \\
+  \item esetet: ($-1$-szeresét kell venni mert negatív)
   \begin{align*}
     \begin{split}
       -(2x-7)+(-(2x+7)) &= x + 15 \\
@@ -196,97 +227,122 @@ Kiszámoljuk
   \end{align*}
   Ez megoldás mert $5 \in \left[ -\dfrac{7}{2}, \dfrac{7}{2} \right)$.
 \end{enumerate}
-Tehát két megoldás van: $5$ és $-1$.\\\\
+Tehát két megoldás van: $5$ és $-1$.
+
+
 \myparagraph{3. (g)}
-$|2x-1| < |x-1|$  \\
-Itt érdemes grafikont rajzolni és abból hamar rá lehet jönni
-hogy milyen esetek vannak. \\
-$2x-1 = 1-x$ \\
-$x = \dfrac{2}{3}$ \\\\
+\[ |2x-1| < |x-1| \]
+Itt érdemes grafikont rajzolni és abból hamar rá lehet jönni hogy milyen esetek vannak.
+\[ 2x-1 = 1-x \]
+\[ x = \dfrac{2}{3} \]
+
+
 \myparagraph{6. (a)}
-$\sqrt{x+1} - \sqrt{9-x} = \sqrt{2x-12}$ \\
-Előrször kikötést kell tenni! \\
-$x+1 \geq 0 \rightarrow x \geq -1$ \\
-$9-x \geq 0 \rightarrow 9 \geq x$ \\
-$2x-12 \geq 0 \rightarrow x \geq 6$ \\
-Tehát: $x \in [6, 9]$ \\
+\[ \sqrt{x+1} - \sqrt{9-x} = \sqrt{2x-12} \]
+Előrször kikötést kell tenni!
+\[
+\begin{rcases*}
+  x+1 \geq 0 \rightarrow x \geq -1 \\
+  9-x \geq 0 \rightarrow 9 \geq x \\
+  2x-12 \geq 0 \rightarrow x \geq 6
+\end{rcases*} \text{Tehát } x \in [6, 9]
+\]
+
 Ezután lehet négyzetre emelni.
-$$ x+1+9-x-2(\sqrt{x+1} \cdot \sqrt{9-x}) = 2x-12 $$
-$$ 22-2x = 2(\sqrt{x+1} \cdot \sqrt{9-x}) $$
-$$ 11-x = \sqrt{(x+1)(9-x)} $$
+\[ x+1+9-x-2(\sqrt{x+1} \cdot \sqrt{9-x}) = 2x-12 \]
+\[ 22-2x = 2(\sqrt{x+1} \cdot \sqrt{9-x}) \]
+\[ 11-x = \sqrt{(x+1)(9-x)} \]
 Itt megint kikötést kell tenni.
-$$ -x + 11 \geq 0 $$
-$$ x \leq 11 $$
+\[ -x + 11 \geq 0 \]
+\[ x \leq 11 \]
 Bár ez nem változtat az előző kikötzésen.
-$$ x^2 + 121 - 22x = -x^2 + 8x + 9 $$
-$$ 2x^2 -30x +112 = 0 $$
-$$ x^2 -15x +56 = 0 $$
-$$ (x-7)(x-8) = 8 $$
-$ x_1 = 7 $ és $ x_2=8 $ ezek $\in [6,9]$ tehát mindkettő megoldás. \\\\
+\[ x^2 + 121 - 22x = -x^2 + 8x + 9 \]
+\[ 2x^2 -30x +112 = 0 \]
+\[ x^2 -15x +56 = 0 \]
+\[ (x-7)(x-8) = 8 \]
+$ x_1 = 7 $ és $ x_2=8 $ ezek $\in [6,9]$ tehát mindkettő megoldás.
+
+
 \myparagraph{6. (k)}
-$$\sqrt{x^2+4x} > 2-x$$
+\[ \sqrt{x^2+4x} > 2-x \]
 Kikötés: $ x^2 +4x \geq 0 \Rightarrow x \leq -4$ vagy $x \geq 0$
 \begin{enumerate}
-  \item eset: \\
-  $2-x \leq 0$ \\
-  $x \geq 2 \Rightarrow x \in [2, \infty]$ ez megoldás.
-  \item eset: \\
-  $ 2-x > 0 $ \\
-  $ x < 2 $
+  \item eset:
+    \[ 2-x \leq 0 \]
+    $x \geq 2 \Rightarrow x \in [2, \infty]$ ez megoldás.
+  \item eset:
+    \[ 2-x > 0 \]
+    \[ x < 2 \]
 \end{enumerate}
-$$ \sqrt{x^2+4x} > 2-x $$
-$$ x^2 + 4x > x^2 - 4x +4 $$
-$$ 8x > 4 $$
-$$ x > \dfrac{1}{2} $$
+\[ \sqrt{x^2+4x} > 2-x \]
+\[ x^2 + 4x > x^2 - 4x +4 \]
+\[ 8x > 4 \]
+\[ x > \dfrac{1}{2} \]
 Így $ \Rightarrow x \in \left(\dfrac{1}{2}, 2\right)$, ez az intervallum még jó lesz de más már nem.
+
+
 
 \section{Logaritmikus, exponenciális egyenletek}
 \setcounter{subsection}{1}
 \subsection{Feladatok}
 \subsubsection{Órai feladatok}
+
+
 \myparagraph{2.}
-$2^{x+3} + 4^{1-\nicefrac{x}{2}} = 33$ \\
-Mindent $2^x$ tagra kell vinni. \\
-$2^{x+3} = 2^3 \cdot 2^x = 8 \cdot 2^x$ \\
-$4^{1-x} = 4 \cdot 4^{-\frac{x}{2}} = 4 \cdot \dfrac{1}{4^{\frac{x}{2}}} = 4 \cdot \dfrac{1}{2^x} = 4 \cdot (2^2)^{\frac{2x}{2}} = 4 \cdot 2^x$ \\
-$\Rightarrow 8 \cdot 2^x + 4 \cdot \dfrac{1}{2^x} = 33$ \\
-$2^x := y \Rightarrow$ \\
-$$8y + 4 \cdot \dfrac{1}{y} = 33$$
-$$ 8y^2 - 33y + 4 = 0 $$
-$$ 8(y-\dfrac{1}{8})(y-4) =0 $$
-$$ y_1 = 4 \text{ és } y_2 = \dfrac{1}{8} $$
+\[ 2^{x+3} + 4^{1-\nicefrac{x}{2}} = 33 \]
+Mindent $2^x$ tagra kell vinni.
+\[ 2^{x+3} = 2^3 \cdot 2^x = 8 \cdot 2^x \]
+\[ 4^{1-x} = 4 \cdot 4^{-\frac{x}{2}} = 4 \cdot \dfrac{1}{4^{\frac{x}{2}}} =
+  4 \cdot \dfrac{1}{2^x} = 4 \cdot (2^2)^{\frac{2x}{2}} = 4 \cdot 2^x \]
+\[ \Rightarrow 8 \cdot 2^x + 4 \cdot \dfrac{1}{2^x} = 33 \]
+\[ 2^x := y \Rightarrow \]
+\[ 8y + 4 \cdot \dfrac{1}{y} = 33 \]
+\[ 8y^2 - 33y + 4 = 0 \]
+\[ 8(y-\dfrac{1}{8})(y-4) =0 \]
+\[ y_1 = 4 \text{ és } y_2 = \dfrac{1}{8} \]
 ha $y_1 = 4$ akkor $x_1 = 2$ \\
-ha $y_2 = \dfrac{1}{8}$ akkor $x_1 = -3$
+ha $y_2 = \dfrac{1}{8}$ akkor $x_1 = -3$ \\
 Ez a két megoldás lesz.
+
+
 \myparagraph{3. (c)}
-$ 3^{x+2} \cdot 2^x - 2 \cdot 36^x + 18 = 0$ \\
-$ 9 \cdot 3^x \cdot 2^x = 9 \cdot 6^x $ \\
-$ 2 \cdot (6^2)^x= 2 \cdot 6^{2x}$ \\
-$ 9 \cdot 6^x - 2 \cdot 6^{2x} + 18 = 0 $ \\
-$ 6x := y \Rightarrow 9y - 2y^2 + 18 = 0 $ \\
-$$ 2y^2 - 9y - 18 = 0 $$
-$$ 2(y+\dfrac{3}{2})(y-6) = 0 $$
-$$ y_1=-\dfrac{3}{2} \text{ és } y_2 = 6$$
-$ 6^x = -\dfrac{3}{2}$ ilyen nem létezik az $\mathbb{R}$-ben ezért $ x_2 = 1 $ ez az egy megoldás van. \\\\
+\[ 3^{x+2} \cdot 2^x - 2 \cdot 36^x + 18 = 0 \]
+\[ 9 \cdot 3^x \cdot 2^x = 9 \cdot 6^x \]
+\[ 2 \cdot (6^2)^x= 2 \cdot 6^{2x} \]
+\[ 9 \cdot 6^x - 2 \cdot 6^{2x} + 18 = 0 \]
+\[ 6x := y \Rightarrow 9y - 2y^2 + 18 = 0 \]
+\[ 2y^2 - 9y - 18 = 0 \]
+\[ 2(y+\dfrac{3}{2})(y-6) = 0 \]
+\[ y_1=-\dfrac{3}{2} \text{ és } y_2 = 6 \]
+$ 6^x = -\dfrac{3}{2}$ ilyen nem létezik az $\mathbb{R}$-ben ezért $ x_2 = 1 $
+  ez az egy megoldás van.
+
+
 \myparagraph{3. (f)}
-$$ 4^{x+1} - 9 \cdot 2^x + 2 > 0 $$
-$$ 4 \cdot (2^x)^2 - 9 \cdot 2^x + 2 > 0 \quad 2^x:=y$$
-$$ 4y^2 - 9y + 2 > 0 $$
-$$ y_1 = 2 \quad y_2 = \dfrac{1}{4} $$
+\[ 4^{x+1} - 9 \cdot 2^x + 2 > 0 \]
+\[ 4 \cdot (2^x)^2 - 9 \cdot 2^x + 2 > 0 \quad 2^x:=y\]
+\[ 4y^2 - 9y + 2 > 0 \]
+\[ y_1 = 2 \quad y_2 = \dfrac{1}{4} \]
 1. eset: $y > 2 \rightarrow x > 1$ \\
-2. eset: $y < \dfrac{1}{4} \Rightarrow x < -2 $ \\\\
+2. eset: $y < \dfrac{1}{4} \Rightarrow x < -2 $
+
+
 \myparagraph{8.}
-$$ 3^{2+\log_9 25} + 25^{1-\log_5 2} + 10^{-\lg 4} $$
-$$ = 3^{\log_9 81 + \log_9 25} + 25^{\log_5 5 - \log_5 2} + 10^{\lg 4^{-1}} $$
-$$ = \left(9^{\frac{1}{2}}\right)^{\log_9 (81 \cdot 25)} + \left(5^2\right)^{\log_5 \frac{5}{2}} + \dfrac{1}{4} $$
-$$ = (81 \cdot 25)^{\frac{1}{2}} + \left(\dfrac{5}{2}\right)^2 + \dfrac{1}{4} $$ \\
+\[ 3^{2+\log_9 25} + 25^{1-\log_5 2} + 10^{-\lg 4} = 3^{\log_9 81 + \log_9 25} +
+  25^{\log_5 5 - \log_5 2} + 10^{\lg 4^{-1}} = \]
+\[ \left(9^{\frac{1}{2}}\right)^{\log_9 (81 \cdot 25)} + \left(5^2\right)^{\log_5 \frac{5}{2}} +
+  \dfrac{1}{4} = (81 \cdot 25)^{\frac{1}{2}} + \left(\dfrac{5}{2}\right)^2 + \dfrac{1}{4} \]
+
+
 \myparagraph{15. (e)}
-$$ \log_{32} (2x) - \log_8 (4x) + \log_2 (x) = 3 $$
-$$ \log_{32} (2) + \log_{32} (x) - (\log_8 (4) + \log_8 (x)) + \log_2 (x) = 3 $$
-$$ \dfrac{1}{5} + \dfrac{\log_2 (x)}{\log_2 (32)} - \dfrac{2}{3} + \dfrac{\log_2 (x)}{\log_2 (8)} + \log_2 (x) = 3$$
-$$ \dfrac{1}{5} + \dfrac{\log_2 (x)}{5} - \dfrac{2}{3} + \dfrac{\log_2 (x)}{3} + \log_2 (x) = 3 $$
-$$ \log_2 (x) \cdot \dfrac{13}{15} - \dfrac{7}{15} = 3 $$
-$$ \log_2 (x) = \dfrac{52}{15} \cdot \dfrac{15}{13} $$
-$$ \log_2 (x) = 4 $$
-$$ x = 2 $$
+\[ \log_{32} (2x) - \log_8 (4x) + \log_2 (x) = 3 \]
+\[ \log_{32} (2) + \log_{32} (x) - (\log_8 (4) + \log_8 (x)) + \log_2 (x) = 3 \]
+\[ \dfrac{1}{5} + \dfrac{\log_2 (x)}{\log_2 (32)} - \dfrac{2}{3} + \dfrac{\log_2 (x)}{\log_2 (8)} +
+  \log_2 (x) = 3\]
+\[ \dfrac{1}{5} + \dfrac{\log_2 (x)}{5} - \dfrac{2}{3} + \dfrac{\log_2 (x)}{3} + \log_2 (x) = 3 \]
+\[ \log_2 (x) \cdot \dfrac{13}{15} - \dfrac{7}{15} = 3 \]
+\[ \log_2 (x) = \dfrac{52}{15} \cdot \dfrac{15}{13} \]
+\[ \log_2 (x) = 4 \]
+\[ x = 2 \]
+
 \end{document}
