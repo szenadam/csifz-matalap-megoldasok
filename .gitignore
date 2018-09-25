@@ -9,3 +9,4 @@
 *.gz
 lab.tex
 !dist/matalap-megoldasok.pdf
+*synctex*

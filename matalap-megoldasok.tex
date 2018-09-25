@@ -1,5 +1,7 @@
 \documentclass[12pt,a4paper,fleqn]{article}
 \usepackage[a4paper,left=3cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{tikz}
+\usepackage{wrapfig}
 \usepackage{amsfonts}
 \usepackage{mathtools}
 \usepackage{nicefrac}
@@ -239,7 +241,7 @@ Itt érdemes grafikont rajzolni és abból hamar rá lehet jönni hogy milyen es
 
 \myparagraph{6. (a)}
 \[ \sqrt{x+1} - \sqrt{9-x} = \sqrt{2x-12} \]
-Előrször kikötést kell tenni!
+Először kikötést kell tenni!
 \[
 \begin{rcases*}
   x+1 \geq 0 \rightarrow x \geq -1 \\
@@ -333,6 +335,15 @@ $ 6^x = -\dfrac{3}{2}$ ilyen nem létezik az $\mathbb{R}$-ben ezért $ x_2 = 1 $
 \[ \left(9^{\frac{1}{2}}\right)^{\log_9 (81 \cdot 25)} + \left(5^2\right)^{\log_5 \frac{5}{2}} +
   \dfrac{1}{4} = (81 \cdot 25)^{\frac{1}{2}} + \left(\dfrac{5}{2}\right)^2 + \dfrac{1}{4} \]
 
+\myparagraph{15. (c)}
+\[ \log_3 (x+1) - \log_3 (x+10) = 2 \cdot \log_3 \frac{9}{2} - 4 \]
+\[ \log_3 \dfrac{(x+1)}{(x+10)} = \log_3 \left(\dfrac{9}{2}\right)^2 - \log_3 81 \]
+\[ \log_3 \dfrac{(x+1)}{(x+10)} = \log_3 \dfrac{\left(\dfrac{81}{4}\right)}{81} \]
+Mivel a logaritmus szigorúan monoton függvény. $\Longrightarrow$
+\[ \dfrac{x+1}{x+10} = \dfrac{1}{4} \]
+\[ 4x + 4 = x + 10 \]
+\[ 3x = 6 \]
+\[ x = 2 \]
 
 \myparagraph{15. (e)}
 \[ \log_{32} (2x) - \log_8 (4x) + \log_2 (x) = 3 \]
@@ -344,5 +355,55 @@ $ 6^x = -\dfrac{3}{2}$ ilyen nem létezik az $\mathbb{R}$-ben ezért $ x_2 = 1 $
 \[ \log_2 (x) = \dfrac{52}{15} \cdot \dfrac{15}{13} \]
 \[ \log_2 (x) = 4 \]
 \[ x = 2 \]
+
+\clearpage
+\myparagraph{15. (j)}
+
+\begin{wrapfigure}{R}{6cm}
+  \begin{tikzpicture}[scale=1.2]
+    \draw [step=0.5, help lines] (-1, -3) grid (3, 3);
+    \draw [->, thick] (-1, 0) -- (3, 0);
+    \draw [->, thick] (0, -3) -- (0, 3);
+    \draw [thick] (1, -0.15) -- (1, 0.15);
+    \node [] at (1, 0.3) {\small{1}};
+    \draw [green, very thick, domain=0.124:3,samples=50] plot (\x, {log2(\x)});
+    \draw [red, very thick, domain=3:0.124,samples=50] plot (\x, {ln(\x)/ln(0.5)});
+    \node [above right] at (0.5, 1) {$\log_{\frac{1}{2}} x$};
+    \node [below right] at (0.5, -1) {$\log_{2} x$};
+  \end{tikzpicture}
+\end{wrapfigure}
+\[ \log_{\frac{1}{2}} \left( \dfrac{3-x}{3x-1} \right) \geq 0 \]
+\[ \log_{\frac{1}{2}} \left( \dfrac{3-x}{3x-1} \right) \geq \log_{\frac{1}{2}} 1 \]
+\textbf{Kikötés:} $ 3x -1 \neq 0 \Rightarrow x \neq \dfrac{1}{3} $ \\[2em]
+A $\log_{\frac{1}{2}} x$ is az 1-nél megy át az $x$ tengelyen de \\
+tükörképe lesz a $\log_2 x$-nek. Mivel ez egy szogirúan \\
+monoton csökkenő függvény, megfordul az \\
+egyenlőtlenségnél a reláció.
+
+\[ \dfrac{3-x}{3x-1} \leq 1 \]
+Egy tört akkor pozitív ha a számláló és a nevező is vagy pozitív vagy negatív.
+
+\indent
+\begin{enumerate}[i.] % TODO: Kijavítani hogy az i. ne a margóra kerüljön.
+  \item Mindkettő pozitív
+  \[
+  \begin{rcases*}
+    3-x \geq 0 \\
+    3x -1 \geq 0 \\
+  \end{rcases*} \Rightarrow x \in \left[ \frac{1}{3}, 3 \right]
+  \]
+  \item Mindkettő negatív
+  \[ 3-x \leq 0 \Rightarrow x \geq 3 \]
+  \[ 3x -1 \leq 0 \Rightarrow x \leq \frac{1}{3} \]
+  Ilyen az $\mathbb{R}$-ben nincs tehát marad az előző kikötés.
+  $x \in \left( \frac{1}{3}, 3 \right]$ (Mert az első kikötés szerint
+  $ x \neq \frac{1}{3}$).
+\end{enumerate}
+Ezt még hozzá kell tenni a kikötéshez.
+\[ \dfrac{3-x}{3x-1} \leq 1 \]
+\[ 3-x \leq 3x-1 \]
+\[ -4x \leq -4 \]
+\[ x \geq 1 \]
+Tehát a megoldás: $x \in \left[ 1, 3 \right]$.
 
 \end{document}
