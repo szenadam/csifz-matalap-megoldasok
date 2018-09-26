@@ -1,6 +1,8 @@
 \documentclass[12pt,a4paper,fleqn]{article}
 \usepackage[a4paper,left=3cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
 \usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
 \usepackage{wrapfig}
 \usepackage{amsfonts}
 \usepackage{mathtools}
@@ -376,7 +378,7 @@ Mivel a logaritmus szigorúan monoton függvény. $\Longrightarrow$
 \[ \log_{\frac{1}{2}} \left( \dfrac{3-x}{3x-1} \right) \geq \log_{\frac{1}{2}} 1 \]
 \textbf{Kikötés:} $ 3x -1 \neq 0 \Rightarrow x \neq \dfrac{1}{3} $ \\[2em]
 A $\log_{\frac{1}{2}} x$ is az 1-nél megy át az $x$ tengelyen de \\
-tükörképe lesz a $\log_2 x$-nek. Mivel ez egy szogirúan \\
+tükörképe lesz a $\log_2 x$-nek. Mivel ez egy szigorúan \\
 monoton csökkenő függvény, megfordul az \\
 egyenlőtlenségnél a reláció.
 
@@ -428,4 +430,55 @@ Tehát a megoldás: $x \in \left[ 1, 3 \right]$.
   Így $k = 0$ esetén $x = \dfrac{\pi}{5}$, $k = 1$ esetén $x = \dfrac{3\pi}{5}$
 \end{enumerate}
 
+
+\myparagraph{4. (d)}
+\[ \cos(2x) - 3 \cdot \cos(x) + 2 = 0 \]
+\[ \cos^2(x) - \sin^2(x) - 3 \cdot \cos(x) + 2 = 0 \]
+\[ \cos^2(x) - (1- \cos^2(x)) 3 \cdot \cos(x) + 2 = 0 \]
+\[ 2 \cdot \cos^2(x) - 3 \cdot \cos(x) + 1 = 0 \]
+Ez pedig már egy sima másodfokú egyenlet $\cos(x)$-re.
+\[ \cos(x) := a \Rightarrow 2a^2 - 3a + 1 = 0 \Rightarrow a_1 = 1, a_2 = \frac{1}{2} \]
+\[ \cos(x) = 1 \text{ vagy } \cos(x) = \frac{1}{2}\]
+Mindkettő lehetséges:
+\[ \cos(x) = 1 \Rightarrow x = 2k\pi \qquad k \in \mathbb{Z} \]
+\[ \cos(x) = \dfrac{1}{2} \Rightarrow x = \dfrac{\pi}{3} + 2k\pi \qquad k \in \mathbb{Z} \]
+\textbf{Viszont!} Mivel $\cos(\beta) = \cos(-\beta)$, ezért
+\[ \cos(x) = \dfrac{1}{2} \Rightarrow x = -\dfrac{\pi}{3} + 2k\pi \qquad k \in \mathbb{Z} \]
+
+\myparagraph{4. (h)}
+\[ \sqrt{3} \cdot \sin(x) + \cos(x) = \sqrt{3} \]
+\[ \sqrt{3} \cdot \sin(x) + 1 \cdot \cos(x) = \sqrt{3} \quad /:2 \]
+\[ \dfrac{\sqrt{3}}{2} \cdot \sin(x) + \dfrac{1}{2} \cdot \cos(x) = \dfrac{\sqrt{3}}{2} \]
+\[ \sin\left(\dfrac{\pi}{3}\right) \cdot \sin(x) +
+\cos\left(\dfrac{\pi}{3}\right) \cdot \cos(x) = \dfrac{\sqrt{3}}{2} \]
+\textbf{Megjegyzés:} $\cos(\alpha - \beta) =
+  \sin(\alpha) \cdot \sin(\beta) + \cos(\alpha) \cdot \cos(\beta) $
+\[ \cos\left( x - \dfrac{\pi}{3} \right) = \dfrac{\sqrt{3}}{2} \]
+Melyek azok a szögek amelyeknek a koszinusza $\dfrac{\sqrt{3}}{2}$ ?
+
+\centering
+\begin{tikzpicture}[scale=1.5]
+  \begin{axis}%
+    [grid=both,
+     minor tick num=4,
+     grid style={line width=.1pt, draw=gray!10},
+     major grid style={line width=.2pt,draw=gray!50},
+     axis lines=middle,
+     enlargelimits={abs=0.2}
+    ]
+    \addplot[domain=-1:3,samples=50,smooth,red] {cos(deg(pi*x))};
+    \draw [dotted] (-1, 0.866025) -- (3, 0.866025);
+    \node [above] at (-0.7, 0.866025) {\tiny $\frac{\sqrt{3}}{2}$};
+    \node [below] at (0.5, -0.05) {\tiny $\frac{\pi}{2}$};
+  \end{axis}
+\end{tikzpicture}
+\clearpage
+\begin{enumerate}[i.]
+  \item
+  \[ x - \dfrac{\pi}{3} = \dfrac{\pi}{6} + 2k\pi \qquad k \in \mathbb{Z} \]
+  \[ x = \dfrac{\pi}{2} + 2k\pi \]
+  \item
+  \[ x - \dfrac{\pi}{3} = -\dfrac{\pi}{6} + 2k\pi \qquad k \in \mathbb{Z} \]
+  \[ x = \dfrac{\pi}{6} + 2k\pi \]
+\end{enumerate}
 \end{document}
