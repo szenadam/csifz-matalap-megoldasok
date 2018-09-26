@@ -456,7 +456,7 @@ Mindkettő lehetséges:
 \[ \cos\left( x - \dfrac{\pi}{3} \right) = \dfrac{\sqrt{3}}{2} \]
 Melyek azok a szögek amelyeknek a koszinusza $\dfrac{\sqrt{3}}{2}$ ?
 
-\centering % TODO Kijavítani a középre igazítást
+%\centering % TODO Kijavítani a középre igazítást
 \begin{tikzpicture}[scale=1.5]
   \begin{axis}%
     [grid=both,
@@ -472,7 +472,7 @@ Melyek azok a szögek amelyeknek a koszinusza $\dfrac{\sqrt{3}}{2}$ ?
     \node [below] at (0.5, -0.05) {\tiny $\frac{\pi}{2}$};
   \end{axis}
 \end{tikzpicture}
-\par
+%\par
 
 \clearpage
 
@@ -488,6 +488,26 @@ Melyek azok a szögek amelyeknek a koszinusza $\dfrac{\sqrt{3}}{2}$ ?
 \myparagraph{7. (c)}
 \[ \dfrac{2 \cdot \sin(x) + 1}{2 \cdot \cos(x)} \leq 0 \]
 Kikötés: $ x \neq \dfrac{\pi}{2} + 2k\pi \qquad k \in \mathbb{Z} $
+\begin{enumerate}
+  \item eset
+  \[ 2 \cdot \sin(x) + 1 \leq 0 \Rightarrow \sin(x) \leq -\dfrac{1}{2}\]
+  \[ cos(x) > 0 \]
+  \[ x \in \left\{ \left[0, \dfrac{\pi}{2}\right)
+    \cup \left(\dfrac{3\pi}{2}, 2\pi\right] \right\} + 2k\pi \qquad k \in \mathbb{Z} \]
+  Itt lesz a $\cos(x) > 0$.
+  Számoljuk ki hol lesz $\sin(x) = -\dfrac{1}{2}$ vagy $\sin(x) = \dfrac{1}{2}$
+  \[ x \in \left[\dfrac{7\pi}{6}, \dfrac{11\pi}{6}\right] \]
+  A kettő metszetét kell venni:
+  \[ x \in \left(\dfrac{3\pi}{2}, \dfrac{11\pi}{6}\right] + 2k\pi \qquad k \in \mathbb{Z} \]
+  \item eset
+  Itt megfordulnak a relációk. HF.
+\end{enumerate}
 
+
+\clearpage
+\section{Nagyságrend-őrző becslések és\\ függvények további becslései}
+\setcounter{subsection}{1}
+\subsection{Feladatok}
+\subsubsection{Órai feladatok}
 
 \end{document}
