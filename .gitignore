@@ -7,6 +7,8 @@
 *.log
 *.pdf
 *.gz
+*.out
+*.toc
 lab.tex
 !dist/matalap-megoldasok.pdf
 *synctex*

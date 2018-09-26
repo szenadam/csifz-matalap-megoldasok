@@ -9,6 +9,9 @@
 \usepackage{nicefrac}
 \usepackage{fancyhdr}
 \usepackage{enumerate}
+\usepackage[utf8]{inputenc}
+\usepackage[hungarian]{babel}
+\usepackage[hidelinks]{hyperref}
 
 % Indent/spacing settings
 \setlength{\mathindent}{0pt}
@@ -28,17 +31,16 @@
 % Custom commands
 \newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}}
 
+\setcounter{tocdepth}{4}
+
 \begin{document}
 \maketitle
 \newpage
-
-
 
 \section{Algebrai és Gyökös kifejezések I.}
 \setcounter{subsection}{1}
 \subsection{Feladatok}
 \subsubsection{Órai feladatok}
-
 
 \myparagraph{3. (b)}
 \begin{flalign*}
@@ -52,7 +54,6 @@
   & \frac{a^2-ab+ab+b^2+a^2+b^2-a^2+b^2-a^2-3b^2}{(a+b)(a-b)(a^2+b^2)} = 0
 \end{flalign*}
 
-
 \myparagraph{4. (a)}
 \begin{enumerate}
   \item Első lehetőség: $a+b+c=0$ kiemelhető így $(a+b+c) \cdot (a^2+b^2-ab)$
@@ -61,7 +62,6 @@
   \[ a^3 + a^2(-a-b) -ab(-a-b) + b^2(-a-b) + b^3 = \]
   \[ a^3 - a^3 - a^2b + a^2b +ab^2 - ab^2 - b^3 + b^3 = 0 \]
 \end{enumerate}
-
 
 \myparagraph{6.}
 \[ \dfrac{x^3-x-y^3+y+xy^2-x^2y}{x^3+x-y^3-y+xy^2-x^2y} =
@@ -562,6 +562,6 @@ Kikötés: $ x \neq \dfrac{\pi}{2} + 2k\pi \qquad k \in \mathbb{Z} $
 
 
 
-
-
+\clearpage
+\tableofcontents
 \end{document}
