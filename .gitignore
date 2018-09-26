@@ -11,4 +11,5 @@
 *.toc
 lab.tex
 !dist/matalap-megoldasok.pdf
+!matalap2018/matalapok2018.pdf
 *synctex*
