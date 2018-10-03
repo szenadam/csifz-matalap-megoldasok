@@ -385,9 +385,9 @@ egyenlőtlenségnél a reláció.
 
 \[ \dfrac{3-x}{3x-1} \leq 1 \]
 Egy tört akkor pozitív ha a számláló és a nevező is vagy pozitív vagy negatív.
-
-\indent
-\begin{enumerate}[i.] % TODO: Kijavítani hogy az i. ne a margóra kerüljön.
+%TODO: % A 11.oldalon ez van : Tört  <= 1
+% te meg úgy oldod meg innentől, mint ha Tört >=0 lenne a kérdés
+\begin{enumerate}[i.]
   \item Mindkettő pozitív
   \[
   \begin{rcases*}
@@ -563,8 +563,62 @@ Másik lehetőség:
 \[ 5x^2 - 3x -10 = 5x^2 -(3x + 10) \geq 5x^2-x^2 = 4x^2 \qquad x \geq 5 \text{ esetén} \]
 Így:
 \[ R(x) \leq \dfrac{23x^4}{4x^2} = \dfrac{23x^2}{4} \qquad x \geq 5 \text{ esetén} \]
+%TODO: Ellenőrzés
+
+
+\clearpage
+\section{Kijelentések, kvantorok, logikai állítások I.}
+\setcounter{subsection}{1}
+\subsection{Feladatok}
+\subsubsection{Órai feladatok}
+
+
+\myparagraph{1. (h)}
+\[ (\neg A \lor B) \Rightarrow B = A \lor B \]
+\begin{tabular}{c|c||c|c|c||c}
+  $A$ & $B$ & $\neg A$ & $(\neg A \lor B)$ & $(\neg A \lor B) \Rightarrow B$ & $A \lor B$ \\ \hline
+  I & I & H & I & I & I \\ \hline
+  H & H & I & I & H & H \\ \hline
+  I & H & H & H & I & I \\ \hline
+  H & I & I & I & I & I \\
+\end{tabular}
+
+\myparagraph{3. (a)}
+\[ x = 0 \text{ és } y = 0 \Rightarrow x^2 + y^2 = 0 \qquad \text{Ez igaz.} \]
+Megfordítva:
+\[ x = 0 \text{ és } y = 0 \Leftarrow x^2 + y^2 = 0 \qquad \text{Ez is igaz.} \]
+
+\myparagraph{3. (b)}
+\[ x \cdot y = x \cdot z \Rightarrow y = z \qquad \text{Ez hamis.} \]
+Mert ha pl: $x = 0$. Megfordítva:
+\[ x \cdot y = x \cdot z \Leftarrow y = z \qquad \text{Így már viszont igaz.} \]
+
+\myparagraph{3. (c)}
+\[ x > y^2 \Rightarrow x > 0 \qquad \text{Ez igaz.} \]
+Megfordítva:
+\[ x > y^2 \Leftarrow x > 0 \qquad \text{Hamis.} \]
+
+\myparagraph{5. (a)}
+\[ \forall n : \frac{1}{n} < 0.01 \qquad \text{Hamis.} \]
+Tagadjuk:
+\[ \neg(\forall n : \frac{1}{n} < 0.01) \rightarrow \exists n: \neg(\frac{1}{n} < 0.01) \rightarrow \exists n : \frac{1}{n} \geq 0.01\]
+
+\myparagraph{5. (b)}
+\[ \exists n : \frac{1}{n} < 0.01 \qquad \text{Igaz.} \]
+Tagadjuk:
+\[ \neg (\exists n : \frac{1}{n} < 0.01) \rightarrow \forall n : \frac{1}{n} \geq 0.01 \qquad \text{Hamis.} \]
+
+\myparagraph{7. (b)}
+\[ \dfrac{2n^3+3}{n^5-3n^4-7n^3+2n^2-10n+1} < 0.05 \]
+\[ \exists N : \forall n \geq N : \dfrac{2n^3+3}{n^5-3n^4-7n^3+2n^2-10n+1} < 0.05 \]
+Felső és alsó becslés alapján eldönthető hogy igaz-e.
+\[ n \geq 1 \text{ esetén} \qquad \frac{n^3}{\frac{1}{2}n^5} \leq \frac{10}{n^2} < 0.05\]
+
+
+
 
 
 \clearpage
 \tableofcontents
 \end{document}
+
