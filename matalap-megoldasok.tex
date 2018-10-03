@@ -35,7 +35,8 @@
 
 \begin{document}
 \maketitle
-\newpage
+\thispagestyle{empty}
+\clearpage
 
 \section{Algebrai és Gyökös kifejezések I.}
 \setcounter{subsection}{1}
@@ -615,8 +616,27 @@ Felső és alsó becslés alapján eldönthető hogy igaz-e.
 \[ n \geq 1 \text{ esetén} \qquad \frac{n^3}{\frac{1}{2}n^5} \leq \frac{10}{n^2} < 0.05\]
 
 
+\clearpage
+\section{Kijelentések, kvantorok, logikai állítások II.}
+\setcounter{subsection}{1}
+\subsection{Feladatok}
+\subsubsection{Órai feladatok}
 
+\myparagraph{1. (a)}
+\[ a + b = 0 \iff a^2 + b^2 = -2ab \]
+Megnézzük mindkét irányt. \\
+$\Rightarrow$: Igaz. Ugyanis: $a^2 + b^2 = -2ab \iff (a+b^2 = 0)$ \\
+$\Leftarrow$: Ez is igaz. \\
+Tehát az ekvivalencia is igaz.
 
+\myparagraph{1. (b)}
+\[ a + b = 1 \iff a^2 + b^2 = 1 - 2ab \]
+\[ a^2 + b^2 = 1 - 2ab \]
+\[ a^2 + b^2 + 2ab = 1 \]
+\[ (a+b)^2 = 1 \]
+$\Rightarrow$: Igaz. \\
+$\Leftarrow$: Hamis. Ugyanis ha $a+b=-1$ akkor is a négyzetre emelés. \\
+Tehát az ekvivalencia hamis.
 
 \clearpage
 \tableofcontents
