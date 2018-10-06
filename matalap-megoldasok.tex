@@ -30,6 +30,9 @@
 
 % Custom commands
 \newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}}
+\DeclareMathOperator{\tg}{tg}
+\newcommand{\tgx}{\tg x}
+
 
 \setcounter{tocdepth}{4}
 
@@ -781,6 +784,45 @@ $\Rightarrow$: ez viszont igaz mert ha egy implikáció jobb oldala hamis az csa
 \end{tabular}
 
 
+\clearpage
+\section{Kijelentések, kvantorok, logikai állítások III.}
+\setcounter{subsection}{1}
+\subsection{Feladatok}
+\subsubsection{Órai feladatok}
+
+
+\myparagraph{2. (a)}
+\[ x^2 = 25 \qquad ? \qquad x = 5 \]
+$\Leftarrow$: Ez biztos hogy igaz. \\
+$\Rightarrow$: ez nem mert $x=-5$ is jó.
+
+\myparagraph{2. (b)}
+\[ a^2+b^2=0 \qquad ? \qquad ab=0 \]
+$\Rightarrow$: Ez igaz. \\
+$\Leftarrow$: ez nem igaz. Pl akármilyen $a$ és $b=0$ esetén.
+
+
+\myparagraph{2. (e)}
+\[ x^3 - x^2 - x + 1 = 0 \qquad ? \qquad x = 1 \]
+$\Leftarrow$: ez igaz. \\
+$\Rightarrow$: itt meg kell nézni hogy van-e más gyöke:
+\[ x^3 - x^2 - x + 1 = (x-1)(x^2-1) = (x-1)(x-1)(x+1) \]
+Tehát jobbról balra nem igaz mert két gyöke van: az $1$ és $-1$
+
+\myparagraph{2. (i)}
+\[ |x|=0 \qquad ? \qquad x \geq 0 \]
+Ez $\iff$ mivel ez maga az abszolút érték definíciója.
+
+\myparagraph{2. (j)}
+\[ \sin(2x) = \tg(x) \qquad ? \qquad x = \dfrac{\pi}{4} + \dfrac{k\pi}{2} \]
+Oldjuk meg az egyenletet.
+\[ sin(2x) = \tg(x) \]
+\[ 2 \cdot \sin(x) \cdot \cos(x) = \dfrac{\sin(x)}{\cos(x)} \]
+\[ \cos(x) \neq 0 \]
+Ha $\sin(x) = 0$, ez egy megoldás és ez $k \cdot \pi$-ben nulla. Ezek viszont
+nincsenek benne az a $\dfrac{\pi}{4} + \dfrac{k\pi}{2}$ intervallumban. \\
+$\Rightarrow$: nem igaz. \\
+$\Leftarrow$:
 \clearpage
 \tableofcontents
 \end{document}
