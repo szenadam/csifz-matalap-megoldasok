@@ -9,7 +9,7 @@
 \usepackage{nicefrac}
 \usepackage{fancyhdr}
 \usepackage{enumerate}
-\usepackage[utf8]{inputenc}
+\usepackage[utf8x]{inputenc}
 \usepackage[hungarian]{babel}
 \usepackage[hidelinks]{hyperref}
 
@@ -719,6 +719,66 @@ Egyszerűen látható a megoldás ha ábrázoljuk: \\[1.2em]
   \draw [very thick] (-3, 0) -- (-3,2);
   \draw [fill=black] (-3, 2) circle (0.5mm);
 \end{tikzpicture}
+\\ Tehát igaz.
+
+
+\myparagraph{3. (c)}
+\[ !\exists a \in \mathcal{D}_f: \forall x \in \mathcal{D}_f \quad f(a) \leq f(x) \]
+Ez egyszerűbben megfogalmazva: pontosan egy minimuma (Dimat1) van. Az előző ábrából
+könnyen leolvasható hogy ez hamis. Ugyanis az $a=1$ és $a=-1$ is minimum.
+
+
+\myparagraph{3. (d)}
+\[ \exists a \in \mathcal{D}_f: \forall x \in \mathcal{D}_f \quad f(a) \leq f(x) \]
+Mivel itt nincs kikötve az egyértelműség ez már igaz.
+
+
+\myparagraph{3. (e)}
+\[ !\exists a \in \mathcal{D}_f: \forall x \in \mathcal{D}_f \quad f(a) \geq f(x) \]
+Ez a 3/c. ellentéte, vagyis itt maximumot keresünk. Van ilyen az $a=-3$ amiből
+egy van, így igaz az állítás.
+
+
+\myparagraph{3. (f)}
+\[ !\exists b \in \mathcal{D}_f: f(b) = 1 \]
+Ez hamis mert három helyen is egy a függvény értéke.
+
+\myparagraph{3. (g)}
+\[ \exists b \in \mathcal{D}_f: f(b) = 0 \]
+Ez igaz mert két helyen nulla a függvény értéke.
+
+
+\myparagraph{3. (h)}
+\[ !\exists x \in \mathcal{D}_f: f(x) = x \]
+Az $f(x) = x$ függvény az origón 45°-ban áthaladó egyenes. Ez pedig egy helyen
+metszi az eredeti függvényt tehát az állítás igaz.
+
+
+\myparagraph{3. (i)}
+$\forall c \in \mathbb{R}$ esetén az $f(x) = c$ egyenletnek van legalább egy
+megoldása. \\
+Ez hamis ugyanis pl: $f(x)=125$-nek nincs megoldása a -3 és 2 intervallumban.
+
+\myparagraph{3. (j)}
+Az $f(x) = c$ egyenletnek van legalább egy megoldása $\iff c \in [0,2]$. \\
+$\Rightarrow$: ebbe az irányba igaz, ugyanis ha $c \notin [0,2]$ nem lesz
+megoldása $f(x)$-nek. \\
+$\Leftarrow$: ez is igaz.
+
+
+\myparagraph{3. (l)}
+Az $f(x) = c \; (c \in \mathbb{R})$ egyenletnek akkor és csak akkor van pontosan 3
+darab megoldása, ha $c = 1$. \\
+$\Leftarrow$: hamis mert nincs a függvénynek sehol három megoldása. \\
+$\Rightarrow$: ez viszont igaz mert ha egy implikáció jobb oldala hamis az csak
+úgy lehet ha a bal oldal igaz. \\[1.3em]
+\begin{tabular}{c|c|c}
+  $P$ & $Q$ & $P \Rightarrow Q$ \\ \hline
+  I & I & I \\ \hline
+  I & H & H \\ \hline
+  H & I & I \\ \hline
+  H & H & I
+\end{tabular}
 
 
 \clearpage
