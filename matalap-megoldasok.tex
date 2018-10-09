@@ -1,6 +1,7 @@
 \documentclass[12pt,a4paper,fleqn]{article}
 \usepackage[a4paper,left=3cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
 \usepackage{tikz}
+%\usepackage{pifont}
 \usepackage{pgfplots}
 \pgfplotsset{compat=newest}
 \usepackage{wrapfig}
@@ -835,11 +836,25 @@ $\Leftarrow$:
 \subsubsection{Ellenőrző kérdések az elmélethez}
 
 \myparagraph{7.}
-\[ \binom{100}{2} + \binom{100}{3} + \binom{101}{4} + \binom{102}{5} = \binom{101}{3} + \binom{101}{4} + \binom{102}{5} = \]
+\[ \binom{100}{2} + \binom{100}{3} + \binom{101}{4} + \binom{102}{5} =
+  \binom{101}{3} + \binom{101}{4} + \binom{102}{5} = \]
 \[ \binom{102}{4} + \binom{102}{5} = \binom{103}{5} \]
 \begin{flushright}
   \textbf{Megjegyzés}: $\binom{n+1}{k} = \binom{n}{k} + \binom{n}{k-1}$
 \end{flushright}
+
+\subsubsection{Órai feladatok}
+
+\myparagraph{1. (a)}
+\[ \sum_{k=1}^{n} k = \dfrac{n(n+1)}{2}\]
+\begin{enumerate}[i.]
+  \item $n=1$-nél: $ 1 = \dfrac{1 \cdot 2}{2} $ \checkmark
+  \item tfh. $n$-ig igaz $\Rightarrow n+1$-re is igaz. \\
+  Fontos hogy az indukciós feltevés, vagyis hogy $n$-ig igaz. Így:
+  \[ 1+2+4+...+n+(n+1) = \dfrac{n(n+1)}{2} + n + 1 = \dfrac{n^2+n+2n+2}{2} =
+    \dfrac{n^2+3n+2}{2} \]
+  \[ = \dfrac{(n+1)((n+1) + 1)}{2} = \dfrac{(n+1)(n+2)}{2} \quad \checkmark \]
+\end{enumerate}
 
 \clearpage
 \tableofcontents
