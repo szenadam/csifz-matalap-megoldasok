@@ -869,8 +869,17 @@ $\Leftarrow$:
 
 
 \myparagraph{1. (c)}
+\[ \sum_{k=1}^{n} \dfrac{1}{k(k+1)} = \dfrac{n}{n+1} \]
+\begin{enumerate}[i.]
+  \item $n=1$: $\dfrac{1}{1(1+1)} = \dfrac{1}{1+1} = \dfrac{1}{2}$
+  \item Tfh. $n$-re igaz $\Rightarrow (n+1)$-re is igaz.
+  \[ \sum_{k=1}^{n+1} \dfrac{1}{k(k+1)} = \dfrac{n+1}{n+2} \]
+  Ennek kell majd kijönnie.
+  \[ \sum_{k=1}^{n+1} \dfrac{1}{k(k+1)} + \dfrac{1}{(n+1)(n+2)} \iff \dfrac{n}{n+1} + \dfrac{1}{(n+1)(n+2)} \]
+  \[ = \dfrac{n(n+2)+1}{(n+1)(n+2)} = \dfrac{n^2+2n+1}{(n+1)(n+2)}
+    = \dfrac{(n+1)^2}{(n+1)(n+2)} = \dfrac{n+1}{n+2} \checkmark \]
 
-
+\end{enumerate}
 
 \myparagraph{1. (f)}
 \[ \sum_{k=1}^{n} k = n^2 \]
