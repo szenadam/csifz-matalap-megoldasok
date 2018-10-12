@@ -832,7 +832,6 @@ $\Leftarrow$:
 \clearpage
 \section{Teljes indukció}
 \setcounter{subsection}{1}
-%\subsection{Feladatok}
 \subsubsection{Ellenőrző kérdések az elmélethez}
 
 \myparagraph{7.}
@@ -851,9 +850,36 @@ $\Leftarrow$:
   \item $n=1$-nél: $ 1 = \dfrac{1 \cdot 2}{2} $ \checkmark
   \item tfh. $n$-ig igaz $\Rightarrow n+1$-re is igaz. \\
   Fontos hogy az indukciós feltevés, vagyis hogy $n$-ig igaz. Így:
-  \[ 1+2+4+...+n+(n+1) = \dfrac{n(n+1)}{2} + n + 1 = \dfrac{n^2+n+2n+2}{2} =
-    \dfrac{n^2+3n+2}{2} \]
+  \[ \underbrace{1+2+4+...+n}_{\text{ez igaz az indukciós feltevés miatt}}
+    + (n+1) = \dfrac{n(n+1)}{2} + n + 1 = \dfrac{n^2+n+2n+2}{2} = \dfrac{n^2+3n+2}{2} \]
   \[ = \dfrac{(n+1)((n+1) + 1)}{2} = \dfrac{(n+1)(n+2)}{2} \quad \checkmark \]
+\end{enumerate}
+
+
+\myparagraph{1. (b)}
+\[ \sum_{k=1}^{n} k^2 = \dfrac{n(n+1)(2n+1)}{6} \]
+\begin{enumerate}[i.]
+  \item $n=1$: $1^2 = \dfrac{1(1+1)(2 \cdot 1 + 1)}{6} = \dfrac{1 \cdot 2 \cdot 3}{6} = \dfrac{6}{6} = 1$ \checkmark
+  \item Tfh. $n$-ig igaz $\Rightarrow (n+1)$-re is igaz. \\[1.2em]
+  $ \dfrac{(n+1)(n+2)(2n+3)}{6} $ Ennek kell majd kijönnie.
+  \[ 1 + 4 + 9 + ... + n^2 + (n+1)^2 = \dfrac{n(n+1)(2n+1)}{6} + (n+1)^2 \]
+  \[ = (n+1) \left( \dfrac{n(2n+1)}{6} + (n+1) \right) = (n+1) \left( \dfrac{2n^2+n+6n+6}{6} \right) \]
+  \[ = (n+1) \left( \dfrac{2n^2+7n+6}{6} \right) = (n+1) \left( \dfrac{(2n+3)(n+2)}{6} \right) \checkmark \]
+\end{enumerate}
+
+
+\myparagraph{1. (c)}
+
+
+
+\myparagraph{1. (f)}
+\[ \sum_{k=1}^{n} k = n^2 \]
+\[ 1+3+5+...+2n-1 = n^2 \]
+\begin{enumerate}[i.]
+  \item $n=0$ esetén: $1=1^1$ \checkmark
+  \item Tfh. $n$-ig igaz $\Rightarrow (n+1)$-re is igaz \\
+    $\underbrace{1+3+5+...+2n-1}_{\text{ez igaz az indukciós feltevés miatt}}
+    + 2n+1 = n^2 + 2n + 1 = (n+1)^2$ \checkmark
 \end{enumerate}
 
 \clearpage
