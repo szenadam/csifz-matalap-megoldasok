@@ -930,11 +930,17 @@ Itt $<$ reláció van tehát becsülni is lehet.
 
 
 \myparagraph{4. (d)}
-\[ \dfrac{1}{n+1} + \dfrac{1}{n+2} + ... + + \dfrac{1}{3n+1} > 1 \]
+\[ \dfrac{1}{n+1} + \dfrac{1}{n+2} + ... + \dfrac{1}{3n+1} > 1 \]
 \begin{enumerate}[i.]
   \item $n=1$-re: $\frac{1}{2} + \frac{1}{3} + \frac{1}{4} > 1 $ \checkmark
   \item Tfh. $n$-re igaz $\Rightarrow (n+1)$-re is igaz.
-  \[ \dfrac{1}{n+2} + \dfrac{1}{n+3} + ... + + \dfrac{1}{3n+1} + \dfrac{1}{3n+2} + \dfrac{1}{3n+3} + \dfrac{1}{3n+4} > 1 \]
+  \[ \dfrac{1}{n+2} + \dfrac{1}{n+3} + ... + \dfrac{1}{3n+1} + \dfrac{1}{3n+2} + \dfrac{1}{3n+3} + \dfrac{1}{3n+4} > 1 \]
+  Itt viszont nem tudjuk az indukciós feltevést úgy használva ahogy eddig, mivel
+  itt mozog az összeg. Ezért hozzá kell adni mejd ki kell vonni. Analízis tételek
+  bizonyításánál ez egy gyakran használt módszer.
+  \[ \dfrac{1}{n+1} + \dfrac{1}{n+2} + ... + \dfrac{1}{3n+1} + \dfrac{1}{3n+2} + \dfrac{1}{3n+3} + \dfrac{1}{3n+4} - \dfrac{1}{n+1} \]
+  \[ 1 + \dfrac{1}{3n+2} + \dfrac{1}{3n+3} + \dfrac{1}{3n+4} - \dfrac{1}{n+1} > 1 \qquad /-1 \]
+  \[ \dfrac{1}{3n+2} + \dfrac{1}{3n+3} + \dfrac{1}{3n+4} - \dfrac{1}{n+1} > 0 \]
 
 \end{enumerate}
 
