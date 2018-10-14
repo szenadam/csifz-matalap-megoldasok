@@ -891,6 +891,53 @@ $\Leftarrow$:
     + 2n+1 = n^2 + 2n + 1 = (n+1)^2$ \checkmark
 \end{enumerate}
 
+
+\myparagraph{4. (a)}
+\[ 2\sqrt{n+1} - 2 < \sum_{k=1}^{n} \dfrac{1}{\sqrt{k}} \leq 2\sqrt{n}-1 \]
+Itt két állítást kell bizonyítani. Először:
+\[ 2 \sqrt{n+1} - 2 < \sum_{k=1}^{n} \dfrac{1}{\sqrt{k}} \]
+Itt $<$ reláció van tehát becsülni is lehet.
+\begin{enumerate}[i.]
+  \item $n=1$: $2 \sqrt{2}-2 < 1$ \checkmark
+  \item Tfh. $n$-re igaz $\Rightarrow (n+1)$-re is igaz
+  \[\sum_{k=1}^{n+1} \dfrac{1}{\sqrt{k}} \]
+  Ezt kéne alulról becsülni.
+  \[ \sum_{k=1}^{n+1} \dfrac{1}{\sqrt{k}} = \sum_{k=1}^{n} \dfrac{1}{\sqrt{k}} + \dfrac{1}{\sqrt{n+1}} \]
+  \[ 2\sqrt{n+1} - 2 + \dfrac{1}{\sqrt{n+1}} < \sum_{k=1}^{n} \dfrac{1}{\sqrt{k}} + \dfrac{1}{\sqrt{n+1}} \]
+  \[ 2\sqrt{n+1} - 2 + \dfrac{1}{\sqrt{n+1}} \geq 2\sqrt{n+1} - 2 \]
+  Ezt kéne megmutatni.
+  \[ 2\sqrt{n+1} - 2 + \dfrac{1}{\sqrt{n+1}} \geq 2\sqrt{n+1} - 2 \qquad /+2 \]
+  \[ 2\sqrt{n+1} + \dfrac{1}{\sqrt{n+1}} \geq 2\sqrt{n+1} \qquad /^2 \]
+  \[ 4(n+1) + \dfrac{1}{n+1} + 4 \geq 4(n+2) \]
+  \[ 4n+8+\dfrac{1}{n+1} \geq 4n+8 \qquad /-(4n+8)\]
+  \[ \dfrac{1}{n+1} \geq 0 \]
+  Ez már igaz minden $n$-re mert $n \in \mathbb{N}^{+}$. \\
+  Nézzük a második egyenlőtlenséget.
+  \begin{enumerate}[i.]
+    \item $n=1$-re: $1 \leq 2\sqrt{1}-1 = 1$ \checkmark
+    \item Tfh. $n$-re igaz $\Rightarrow (n+1)$-re is igaz.
+    \[ \sum_{k=1}^{n+1} \dfrac{1}{\sqrt{k}} = \sum_{k=1}^{n} \dfrac{1}{\sqrt{k}}
+    + \dfrac{1}{\sqrt{n+1}} \leq 2\sqrt{n}-1 + \dfrac{1}{\sqrt{n+1}} \leq 2\sqrt{n}-1 \qquad /+1 \]
+    \[ 2\sqrt{n} + \dfrac{1}{\sqrt{n+1}} \leq 2\sqrt{n+1} \qquad / \cdot \sqrt{n+1} \]
+    \[ 2\sqrt{n(n+1)} + 1 \leq 2(n+1) \qquad /-1 \]
+    \[ 2\sqrt{n(n+1)} \leq 2(n+1) -1 \qquad /^2 \]
+    \[ 4n(n+1) \leq 4n^2+4n+1 \]
+    \[ 4n^2+4n \leq 4n^2+4n+1 \qquad /-(4n^2+4n)\]
+    \[ 0 \leq 1 \checkmark \]
+  \end{enumerate}
+
+\end{enumerate}
+
+
+\myparagraph{4. (d)}
+\[ \dfrac{1}{n+1} + \dfrac{1}{n+2} + ... + + \dfrac{1}{3n+1} > 1 \]
+\begin{enumerate}[i.]
+  \item $n=1$-re: $\frac{1}{2} + \frac{1}{3} + \frac{1}{4} > 1 $ \checkmark
+  \item Tfh. $n$-re igaz $\Rightarrow (n+1)$-re is igaz.
+  \[ \dfrac{1}{n+2} + \dfrac{1}{n+3} + ... + + \dfrac{1}{3n+1} + \dfrac{1}{3n+2} + \dfrac{1}{3n+3} + \dfrac{1}{3n+4} > 1 \]
+
+\end{enumerate}
+
 \clearpage
 \tableofcontents
 \end{document}
