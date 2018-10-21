@@ -1092,9 +1092,159 @@ Tipp: a 0, 1, -1 számokat gyorsan meg le lehet ellenőrizni hogy gyökök-e. It
    2  & 5 & -3 & 0   & 1 & 0 \\
    -3 & 2 & -4 & 0   & 0 & 1
   \end{array}
-  \qquad \text{Tehát valóban inverze}
+  \qquad \text{Tehát valóban inverze.}
 \]
 
+
+\clearpage
+\section{Determináns}
+\setcounter{subsection}{1}
+\subsection{Feladatok}
+\subsubsection{Órai feladatok}
+
+\myparagraph{1. (b)}
+\[
+  A =
+  \begin{bmatrix}
+    3 & 1 & -4 \\
+    2 & 5 & 6 \\
+    1 & 4 & 8
+  \end{bmatrix}
+  \qquad
+  \text{\textbf{Megjegyzés:} sakktábla szabály}
+  \begin{bmatrix}
+    + & - & + \\
+    - & + & - \\
+    + & - & +
+  \end{bmatrix}
+\]
+\[
+  det(A) = -1 \cdot (2 \cdot 8 - 6 \cdot 1) + 5 \cdot (3 \cdot 8 - (-4) \cdot 1)
+    - 4 \cdot (3 \cdot 6 - 2 \cdot (-4)) = -10 + 140 - 104 = 26
+\]
+A determináns nem nulla, tehát van inverz. \\
+Az inverz megkerésének egyik módszere az adjungált módszer. Az adjungált az
+aldeterminánsokból álló mátrix és ennek a transzponáltja.
+\[ A^{-1} = \dfrac{1}{det(A)} \cdot adj(A) \]
+\[ adj(A) =
+  \begin{pmatrix}
+    \begin{vmatrix}
+      5 & 6 \\
+      4 & 8
+    \end{vmatrix}
+    &
+    \begin{vmatrix}
+      2 & 6 \\
+      1 & 8
+    \end{vmatrix}
+    &
+    \begin{vmatrix}
+      2 & 5 \\
+      1 & 4
+    \end{vmatrix} \\
+    \begin{vmatrix}
+      1 & -4 \\
+      4 & 8
+    \end{vmatrix}
+    &
+    \begin{vmatrix}
+      3 & -4 \\
+      1 & 8
+    \end{vmatrix}
+    &
+    \begin{vmatrix}
+      3 & 1 \\
+      1 & 4
+    \end{vmatrix} \\
+    \begin{vmatrix}
+      1 & -4 \\
+      5 & 6
+    \end{vmatrix}
+    &
+    \begin{vmatrix}
+      3 & -4 \\
+      2 & 6
+    \end{vmatrix}
+    &
+    \begin{vmatrix}
+      3 & 1 \\
+      2 & 5
+    \end{vmatrix} \\
+  \end{pmatrix}^{T}
+  =
+  \begin{pmatrix}
+    16 & -10 & 3 \\
+    -24 & 28 & -11 \\
+    26 & -26 & 13
+  \end{pmatrix}^{T}
+  =
+  \begin{pmatrix}
+    16 & -24 & 26 \\
+    -10 & 28 & -26 \\
+    3 & -11 & 13
+  \end{pmatrix}
+\]
+\[
+  A^{-1} = \dfrac{1}{26} \cdot
+  \begin{pmatrix}
+    16 & -24 & 26 \\
+    -10 & 28 & -26 \\
+    3 & -11 & 13
+  \end{pmatrix}
+\]
+Ellenőrzés:
+\[
+  A^{-1} \times A =
+  \dfrac{1}{26} \cdot
+  \begin{pmatrix}
+    16 & -24 & 26 \\
+    -10 & 28 & -26 \\
+    3 & -11 & 13
+  \end{pmatrix}
+  \cdot
+  \begin{pmatrix}
+    3 & 1 & -4 \\
+    2 & 5 & 6 \\
+    1 & 4 & 8
+  \end{pmatrix}
+  =
+  \dfrac{1}{26} \cdot
+  \begin{pmatrix}
+    26 & 0  & 0 \\
+    0  & 26 & 0 \\
+    0  & 0  & 26
+  \end{pmatrix}
+  =
+  \begin{pmatrix}
+    1 & 0  & 0 \\
+    0  & 1 & 0 \\
+    0  & 0  & 1
+  \end{pmatrix}
+\]
+
+
+\myparagraph{2.}
+\[
+  A =
+  \begin{bmatrix}
+    -2 & 5 \\
+    -3 & 1
+  \end{bmatrix}
+  \qquad
+  B =
+  \begin{bmatrix}
+    -2 & 3 \\
+    -4 & 6
+  \end{bmatrix}
+\]
+\[
+  A^{-1} = \dfrac{1}{13} \cdot
+  \begin{pmatrix}
+    1 & 3 \\
+    -5 & -2
+  \end{pmatrix}
+\]
+$B$-nek nulla a determinánsa mivel a második sor az első kétszerese.
 
 \clearpage
 \tableofcontents
