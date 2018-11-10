@@ -1206,6 +1206,53 @@ A = \begin{bmatrix} 7 & 2 \\ -1 & 0 \\ \end{bmatrix} \Rightarrow \text{egységm�
     \Rightarrow \text{felső háromszög mátrix}
 \]
 
+\myparagraph{2.}
+\[
+  A = \begin{bmatrix} 1 & 1 & 5 \\ -3 & 0 & 1 \\ 0 & 1 & 2 \\ 2 & -4 & 1 \end{bmatrix} \qquad
+  B = \begin{bmatrix} 4 & 0 & 1 \\ 1 & -4 & 2 \\ 2 & -1 & 0 \\ 0 & 2 & 1 \end{bmatrix} \qquad
+  C = \begin{bmatrix} 2 & 4 & 0 \\ -1 & 1 & 1 \\ 3 & 2 & -1 \\ 1 & 0 & 1 \end{bmatrix} \qquad
+\]
+\begin{align*}
+  A+2B-C &=
+  \begin{bmatrix} 1 & 1 & 5 \\ -3 & 0 & 1 \\ 0 & 1 & 2 \\ 2 & -4 & 1 \end{bmatrix}
+  + 2 \cdot
+  \begin{bmatrix} 4 & 0 & 1 \\ 1 & -4 & 2 \\ 2 & -1 & 0 \\ 0 & 2 & 1 \end{bmatrix}
+  -
+  \begin{bmatrix} 2 & 4 & 0 \\ -1 & 1 & 1 \\ 3 & 2 & -1 \\ 1 & 0 & 1 \end{bmatrix} \\
+  &=
+  \begin{bmatrix} 1 & 1 & 5 \\ -3 & 0 & 1 \\ 0 & 1 & 2 \\ 2 & -4 & 1 \end{bmatrix}
+  +
+  \begin{bmatrix} 8 & 0 & 2 \\ 2 & -8 & 4 \\ 4 & -2 & 0 \\ 0 & 4 & 2 \end{bmatrix}
+  -
+  \begin{bmatrix} 2 & 4 & 0 \\ -1 & 1 & 1 \\ 3 & 2 & -1 \\ 1 & 0 & 1 \end{bmatrix}
+  =
+  \begin{bmatrix} 7 & -3 & 7 \\ 0 & -9 & 4 \\ 1 & -3 & 3 \\ 1 & 0 & 2 \end{bmatrix}
+\end{align*}
+\[
+  A^{T}B =
+  \begin{array}{cccc|ccc}
+    &    &   &    & 4  & 0  & 1  \\
+    &    &   &    & 1  & -4 & 2  \\
+    &    &   &    & 2  & -1 & 0  \\
+    &    &   &    & 0  & 2  & 1  \\ \hline
+  1 & -3 & 0 & 2  & 1  & 16 & -3 \\
+  1 & 0  & 1 & -4 & 6  & -9 & -3 \\
+  5 & 1  & 2 & 1  & 25 & -4 & 8  \\
+\end{array}
+\]
+\[
+  (AB^{T})C =
+  \begin{array}{cccc|ccc}
+      &    &    &    & 2   & 4   & 0  \\
+      &    &    &    & -1  & 1   & 1  \\
+      &    &    &    & 3   & 2   & -1 \\
+      &    &    &    & 1   & 0   & 1  \\ \hline
+  9   & 7  & 1  & 7  & 21  & 45  & 13 \\
+  -11 & -1 & -6 & 1  & -38 & -57 & 6  \\
+  2   & 0  & -1 & 4  & 5   & 6   & 5  \\
+  9   & 20 & 8  & -7 & 15  & 72  & 5  \\
+  \end{array}
+\]
 
 \clearpage
 \section{Determináns}
@@ -1321,4 +1368,3 @@ $B$-nek nulla a determinánsa mivel a második sor az első kétszerese.
 \clearpage
 \tableofcontents
 \end{document}
-
