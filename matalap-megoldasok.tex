@@ -1442,6 +1442,46 @@ altér.
   (-1) \cdot (1,2,3) = (-1,-2,-3) \notin S_2
 \]
 
+
+\myparagraph{3. (c)}
+\[
+  S_3 = \{ (x,y,z) \in \mathbb{R}^3 : 2x - 3y + z = 0 \}
+\]
+Ez a sík ponthalmaza $(Ax+By+Cz = D)$. Ez egy olyan sík amely átmegy az origón.
+Ez altér lesz mivel egy sík akkor altér ha átmegy az origón. Bizonyítsuk be:
+\begin{enumerate}[i.]
+  \item Zárt-e összeadásra? \\
+    Tfh. $(x_1, y_1, z_1) \in S_3$ és $(x_2, y_2, z_2) \in S_3$. \\
+    $(x_1+x_2, y_1+y_2, z_1+z_2) \stackrel{?}{\in} S_3$
+    \[ 2(x_1+x_2) - 3(y_1+y_2) + (z_1 + z_2) = 0 \]
+    \[ \underbrace{(2x_1 - 3y_1 + z_1)}_{=0} +
+       \underbrace{(2x_2 - 3y_2 + z_2)}_{=0} = 0
+    \]
+    Tehát az összeadásra nézve zárt.
+  \item Zárt-e a szorzásra? \\
+    Tfh. $(x_1, y_1, z_1) \in S_3 \; \lambda \in \mathbb{R} $
+    \[ (\lambda x_1, \lambda y_1, \lambda z_1) \stackrel{?}{\in} S_3 \]
+    \[ 2\lambda x_1 - 3\lambda y_1 + \lambda z_1 \stackrel{?}{=} 0 \]
+    \[ \lambda \underbrace{(2x_1 - 3y_1 + z_1)}_{=0} = 0 \]
+    Tehát zárt az olvasásra nézve.
+\end{enumerate}
+
+
+\myparagraph{3. (d)}
+\[
+  S_4 = \{ (x,y,z) \in \mathbb{R}^3 : 2x - 3y + z = 5 \}
+\]
+\begin{enumerate}[i.]
+  \item Zárt-e összeadásra? \\
+    Tfh. $(x_1, y_1, z_1) \in S_4$ és $(x_2, y_2, z_2) \in S_4$. \\
+    $(x_1+x_2, y_1+y_2, z_1+z_2) \stackrel{?}{\in} S_4$
+    \[ 2(x_1+x_2) - 3(y_1+y_2) + (z_1 + z_2) = 5 \]
+    \[ \underbrace{(2x_1 - 3y_1 + z_1)}_{=5} +
+       \underbrace{(2x_2 - 3y_2 + z_2)}_{=5} \neq 5
+    \]
+    Tehát nem zárt az összeadásra, tehát nem altér.
+\end{enumerate}
+
 \clearpage
 \tableofcontents
 \end{document}
