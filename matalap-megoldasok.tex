@@ -1420,7 +1420,6 @@ Ez az egységkör pontjaiba mutató vektorok halmaza. Ez nem vektortér, ugyanis
 Ez a pozitív síknegyed ponthalmaza. Ez sem lesz altér ha negatív számmal
 szoroznánk az eredmény nem lenne benne a halmazban.
 
-
 \myparagraph{3. (a)}
 \[
   S_1 = \{ (x,y,z) \in \mathbb{R}^3 : x^2 + y^2 + z^2 = 1 \}
@@ -1431,7 +1430,6 @@ Ez a kúp egyenlete. Ez nem zárt az összeadásra nézve tehát nem altér. Pl:
   (1,0,0) + (0,0,1) = (1,0,1) \notin S_1
 \]
 
-
 \myparagraph{3. (b)}
 \[
   S_2 = \{ (x,y,z) \in \mathbb{R}^3 : x \geq 0 \wedge y \geq 0 \wedge z \geq 0 \}
@@ -1441,7 +1439,6 @@ altér.
 \[
   (-1) \cdot (1,2,3) = (-1,-2,-3) \notin S_2
 \]
-
 
 \myparagraph{3. (c)}
 \[
@@ -1466,7 +1463,6 @@ Ez altér lesz mivel egy sík akkor altér ha átmegy az origón. Bizonyítsuk b
     Tehát zárt az olvasásra nézve.
 \end{enumerate}
 
-
 \myparagraph{3. (d)}
 \[
   S_4 = \{ (x,y,z) \in \mathbb{R}^3 : 2x - 3y + z = 5 \}
@@ -1481,6 +1477,23 @@ Ez altér lesz mivel egy sík akkor altér ha átmegy az origón. Bizonyítsuk b
     \]
     Tehát nem zárt az összeadásra, tehát nem altér.
 \end{enumerate}
+
+\myparagraph{3. (e)}
+\[
+  S_5 = \{ (x-y,3x,2x+y) \in \mathbb{R}^3 : x, y \in \mathbb{R} \}
+\]
+Ha $x=y=0 \Rightarrow (0,0,0)$ tehát az origó benne van.
+\begin{enumerate}[i.]
+  \item Zárt-e összeadásra?
+    \[ (x_1-y_1, 3x_1, 2x_1+y_1) : x_1, y_1 \in \mathbb{R} \]
+    \[ (x_2-y_2, 3x_2, 2x_2+y_2) : x_2, y_2 \in \mathbb{R} \]
+    \[ +: (x_1-y_1+x_2-y_2, 3x_1+3x_2, 2x_1+y_1+2x_2+y_2) \]
+    \[ (x_1+x_2-(y_1+y_2), 3(x_1+x_2), 2(x_1+x_2)+(y_1+y_2)) \]
+    Tehát zárt az összeadásra.
+  \item Zárt-e szorzásra? \\
+    Az előbbiekhez hasonlóan igazolható hogy zárt a szorzásra is.
+\end{enumerate}
+Tehát altér
 
 \clearpage
 \tableofcontents
