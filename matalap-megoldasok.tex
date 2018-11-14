@@ -1420,6 +1420,28 @@ Ez az egységkör pontjaiba mutató vektorok halmaza. Ez nem vektortér, ugyanis
 Ez a pozitív síknegyed ponthalmaza. Ez sem lesz altér ha negatív számmal
 szoroznánk az eredmény nem lenne benne a halmazban.
 
+
+\myparagraph{3. (a)}
+\[
+  S_1 = \{ (x,y,z) \in \mathbb{R}^3 : x^2 + y^2 + z^2 = 1 \}
+\]
+Ez a kúp egyenlete. Ez nem zárt az összeadásra nézve tehát nem altér. Pl:
+\[
+  (1,0,0) \in S_1 \wedge (0,0,1) \in S_1 \\
+  (1,0,0) + (0,0,1) = (1,0,1) \notin S_1
+\]
+
+
+\myparagraph{3. (b)}
+\[
+  S_2 = \{ (x,y,z) \in \mathbb{R}^3 : x \geq 0 \wedge y \geq 0 \wedge z \geq 0 \}
+\]
+Ez a pozitív síknyolcad ponthalmaza. Itt is ha mínusszal szorzunk az már nem lesz
+altér.
+\[
+  (-1) \cdot (1,2,3) = (-1,-2,-3) \notin S_2
+\]
+
 \clearpage
 \tableofcontents
 \end{document}
