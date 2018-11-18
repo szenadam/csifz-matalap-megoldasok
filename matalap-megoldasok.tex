@@ -1405,6 +1405,30 @@ $B$-nek nulla a determinánsa mivel a második sor az első kétszerese.
 \subsubsection{Órai feladatok}
 
 
+\myparagraph{1.}
+
+\begin{align*}
+  x+y     &= (-3+2, 4+0, 1+4, 5+(-3), 2+(-1)) = (-1, 4, 5, 2, 1) \\
+  y-z     &= (2-7,0-(-1), 4-0, -3-2, -1-3) = (-5,1,4,-5,-4) \\
+  4x      &= (4 \cdot -3, 4 \cdot 4, 4 \cdot 1, 4 \cdot 5, 4 \cdot 2)
+    = (-12, 16, 4, 20, 8) \\
+  x+3y-2z &= (-3+ 3 \cdot 2 - 2 \cdot 7, 4 + 3 \cdot 0 - 2 \cdot (-1), \\
+      & 1 + 3 \cdot 4 - 2 \cdot 0, 5 + 3 \cdot -3 - 2 \cdot 2,
+        2 + 3 \cdot -1 - 2 \cdot 3 ) = (-11, 6, 13, -8, -7)
+\end{align*}
+\[
+  Ax =
+  \begin{array}{ccccc|c}
+    &   &    &    &    & -3  \\
+    &   &    &    &    & 4   \\
+    &   &    &    &    & 1   \\
+    &   &    &    &    & 5   \\
+    &   &    &    &    & 2   \\ \hline
+  5 & 1 & -4 & -2 & 1  & -23 \\
+  0 & 2 & 4  & -3 & -1 & -5  \\
+  \end{array}
+\]
+
 \myparagraph{2.}
 \[
   K := \{ (x,y) \in \mathbb{R}^{2} : x^2 + y^2 = 1 \}
@@ -1412,8 +1436,11 @@ $B$-nek nulla a determinánsa mivel a második sor az első kétszerese.
 Ez az egységkör pontjaiba mutató vektorok halmaza. Ez nem vektortér, ugyanis:
 \begin{flalign*}
   &v_1 = (1,0) \quad  v_2 = (0,1) \\
-  &v_1 + v_2 = (1,1) \text{ ami nem eleme, tehát az összeadásra nézve nem zárt}
+  &v_1 + v_2 = (1,1)
 \end{flalign*}
+Az $(1,1)$ vektor nem eleme a $K$ halmaznak, tehát az összeadásra nézve nem, zárt,
+így a szorzásra már meg se kell nézni.
+
 \[
   N := \{ (x,y) \in \mathbb{R}^{2} : x \geq 0 \wedge y \geq 0 \}
 \]
