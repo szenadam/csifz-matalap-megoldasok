@@ -1657,5 +1657,49 @@ bizonyítanom hogy független lesz. Pl.:
 Így ez valóban független.
 
 \clearpage
+\section{Bázis, dimenzió}
+\setcounter{subsection}{1}
+\subsection{Feladatok}
+\subsubsection{Órai feladatok}
+
+\myparagraph{2 (a.)}
+$x_1$ és $x_2$ nem alkot bázis mert csak két darab van. Mivel $\mathbb{R}^4$-ben
+vagyunk ezért pontosan négy vektor kell.
+
+\myparagraph{2 (b.)}
+$x_1, x_2, x_3, x_4, x_5$ nem alkot bázis mert öt darab van. Mivel $\mathbb{R}^4$-ben
+vagyunk ezért pontosan négy vektor kell.
+
+\myparagraph{2 (c.)}
+\[ \lambda_1 x_1 + \lambda_2 x_2  + \lambda_3 x_3 + \lambda_4 x_4 \stackrel{?}{=} 0 \]
+\begin{equation*}
+  \begin{rcases}
+     2\lambda_1 +              \lambda_3 -  \lambda_4 &= 0 \\ %TODO +/- jelekhez igazítani
+     3\lambda_1 + \lambda_2 + 2\lambda_3 - 5\lambda_4 &= 0 \\
+    -2\lambda_1 -              \lambda_3 + 2\lambda_4 &= 0 \\
+     7\lambda_1 + \lambda_2                           &= 0
+  \end{rcases}
+\end{equation*}
+Az elsőt és a harmadikat összeadva: $ \lambda_4 = 0 $.
+\begin{equation*}
+  \begin{rcases}
+     2\lambda_1 +              \lambda_3  &= 0 \\
+     3\lambda_1 + \lambda_2 + 2\lambda_3  &= 0 \\
+     7\lambda_1 + \lambda_2               &= 0
+  \end{rcases}
+  \begin{matrix}
+    \Rightarrow \lambda_3 = -2\lambda_1 \Rightarrow \lambda_3 = 0 \\
+    \\
+    \Rightarrow \lambda_2 = -7\lambda_1 \Rightarrow \lambda_2 = 0
+  \end{matrix}
+\end{equation*}
+\[ 3\lambda_1 + (-7\lambda_1) + 2(-2\lambda_1) = 0\]
+\[ -8\lambda_1 = 0 \Rightarrow \lambda_1 = 0 \]
+Tehát a négy vektor lineárisan független így bázist alkotnak.
+
+\myparagraph{4 (a.)}
+
+
+\clearpage
 \tableofcontents
 \end{document}
