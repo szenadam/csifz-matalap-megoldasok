@@ -1622,11 +1622,39 @@ Mivel $ \lambda_1 + 2\lambda_2 = \lambda_3 $
   3\lambda_1 - \dfrac{2}{3}\lambda_1 + 7 \cdot \left( -\dfrac{1}{3}\lambda_1 \right)
   = 3\lambda_1 - \dfrac{9}{3}\lambda_1 = 0 \qquad \checkmark
 \]
-$ \lambda_1 = -\dfrac{3}{2}, \; \lambda_1 = -3\lambda_3 $ ezek megoldják mind a
+$ \lambda_1 = -\dfrac{3}{2}\lambda_2, \; \lambda_1 = -3\lambda_3 $ ezek megoldják mind a
 három egyenletet. Ezek összefüggők mert végtelen sok szám elégíti ki ezt az
 egyenletrendszert. Pl: $ \lambda_1 = 1, \lambda_2 = -\dfrac{2}{3},
-\lambda_3 = -\dfrac{1}{3} $ vagy $ \lambda_1 = 3, \lambda_2 = -2, \lambda_3 = -1 $
+\lambda_3 = -\dfrac{1}{3} $ vagy $ \lambda_1 = 3, \lambda_2 = -2, \lambda_3 = -1 $.
 
+\myparagraph{3 (a.)}
+\[ v_1 = (1,-2,1), v_2 = (2,1,0) \]
+Egy olyan vektor amelyet hozzáadva legyen összefüggő:
+\[ v_3 = (3, -1, 1)  = v_1 + v_2 \]
+Így:
+\[ v_1 + v_2 - v_3 = 0 \]
+
+\myparagraph{3 (b.)}
+Egy olyan vektor amelyet hozzáadva legyen független. Veszek egy vektort és be kell
+bizonyítanom hogy független lesz. Pl.:
+\[ v_3 = (3, 0, 1) \]
+\[ \lambda_1 v_1 + \lambda_2 v_2 + \lambda_3 v_3 = 0 \]
+\begin{equation*}
+  \begin{rcases}
+      \lambda_1 + 2\lambda_2 + 3\lambda_3 &= 0 \\
+    -2\lambda_1 +  \lambda_2              &= 0 \\
+      \lambda_1 +               \lambda_3 &= 0
+  \end{rcases}
+  \begin{matrix}
+    \\
+    \lambda_2 = 2\lambda_1 \\
+    \lambda_1 = -\lambda_3
+  \end{matrix}
+\end{equation*}
+\[ \lambda_1 + 4\lambda_1 + 3(-\lambda_1) = 0 \]
+\[ 2\lambda_1 = 0 \Rightarrow \lambda_1 = 0 \Rightarrow \lambda_2 = 0
+    \Rightarrow \lambda_3 = 0 \]
+Így ez valóban független.
 
 \clearpage
 \tableofcontents
