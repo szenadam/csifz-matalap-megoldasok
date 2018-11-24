@@ -1567,6 +1567,66 @@ $\Rightarrow \lambda_2 = \lambda_3 \Rightarrow \lambda_2 = \lambda_3 = 0
 \Rightarrow  \lambda_1 = 0 $ \\
 Mindhárom $\lambda$ nulla, tehát lineárisan függetlenek a vektorok.
 
+\myparagraph{1. (b)}
+\[ \lambda_1(1,2,3,1)+ \lambda_2(2,2,1,3)+ \lambda_3(-1,2,7,-3) = 0 \]
+\[
+  (\lambda_1 + 2 \lambda_2 - \lambda_3, 2\lambda_1 + 2\lambda_2 + 2\lambda_3,
+    3\lambda_1 + \lambda_2 + 7\lambda_3, \lambda_1 + 3\lambda_2 - 3\lambda_3)=0
+\]
+\begin{equation*}
+  \begin{rcases}
+     \lambda_1 + 2\lambda_2 -  \lambda_3 &= 0 \\
+    2\lambda_1 + 2\lambda_2 + 2\lambda_3 &= 0 \\
+    3\lambda_1 +  \lambda_2 + 7\lambda_3 &= 0 \\
+     \lambda_1 + 3\lambda_2 - 3\lambda_3 &= 0
+  \end{rcases}
+\end{equation*}
+Az elsőből: $\lambda_3 = \lambda_1 + 2\lambda_2$. Ezt behelyettesítjük a másodikba
+és a harmadikba.
+\begin{equation*}
+  \begin{rcases}
+    2\lambda_1 + 2\lambda_2 + 2\lambda_1 + 4\lambda_2 &= 0 \\
+     \lambda_1 + 3\lambda_2 - 3\lambda_1 - 6\lambda_2 &= 0
+  \end{rcases}
+\end{equation*}
+\begin{equation*}
+  \begin{rcases}
+     4\lambda_1 + 6\lambda_2 &= 0 \\
+    -2\lambda_1 - 3\lambda_2 &= 0
+  \end{rcases}
+  \begin{matrix} / :2 \\ \\ \end{matrix}
+\end{equation*}
+\begin{equation*}
+  \begin{rcases}
+     2\lambda_1 + 3\lambda_2 &= 0 \\
+    -2\lambda_1 - 3\lambda_2 &= 0
+  \end{rcases}
+  \begin{matrix} \\ \Rightarrow \lambda_1 = -\dfrac{3}{2}\lambda_2 \end{matrix}
+\end{equation*}
+Mivel $ \lambda_1 + 2\lambda_2 = \lambda_3 $
+\[ \lambda_1 + 2 \cdot \left( -\dfrac{2}{3}\lambda_1 \right) = \lambda_3 \]
+\[ \lambda_1 + \left(-\dfrac{4}{3}\lambda_1\right) = \lambda_3 \]
+\[ -\dfrac{1}{3}\lambda_1 = \lambda_3 \Rightarrow \lambda_1 = -3\lambda_3 \]
+Így:
+\[
+  \lambda_1 + 2\lambda_2 -\lambda_3
+  = \lambda_1 + 2 \cdot \left( -\dfrac{2}{3}\lambda_1 \right) - \left( -\dfrac{1}{3}\lambda_1 \right)
+  = 0 \qquad \checkmark
+\]
+\[
+  2\lambda_1 + 2\lambda_2 + 2\lambda_3
+  = 2\lambda_1 + 2 \cdot \left( -\dfrac{2}{3}\lambda_1 \right) + 2 \cdot \left( -\dfrac{1}{3}\lambda_1 \right)
+  = 0 \qquad \checkmark
+\]
+\[
+  3\lambda_1 - \dfrac{2}{3}\lambda_1 + 7 \cdot \left( -\dfrac{1}{3}\lambda_1 \right)
+  = 3\lambda_1 - \dfrac{9}{3}\lambda_1 = 0 \qquad \checkmark
+\]
+$ \lambda_1 = -\dfrac{3}{2}, \; \lambda_1 = -3\lambda_3 $ ezek megoldják mind a
+három egyenletet. Ezek összefüggők mert végtelen sok szám elégíti ki ezt az
+egyenletrendszert. Pl: $ \lambda_1 = 1, \lambda_2 = -\dfrac{2}{3},
+\lambda_3 = -\dfrac{1}{3} $ vagy $ \lambda_1 = 3, \lambda_2 = -2, \lambda_3 = -1 $
+
 
 \clearpage
 \tableofcontents
