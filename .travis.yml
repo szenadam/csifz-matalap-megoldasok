@@ -6,11 +6,11 @@ apt_packages:
 script:
   - pdflatex -interaction=nonstopmode matalap-megoldasok.tex
   - pdf2djvu -d 1200 -o matalap-megoldasok.djvu matalap-megoldasok.pdf
-deploy:
-  provider: releases
-  api_key: "534d7b8cb80db3c9a334fa80c600ebd78051cc05"
-  file:
-    - "matalap-megoldasok.pdf"
-  skip_cleanup: true
-  on:
-    repo: szenadam/csifz-matalap-megoldasok
+# deploy:
+#   provider: releases
+#   api_key: "534d7b8cb80db3c9a334fa80c600ebd78051cc05"
+#   file:
+#     - "matalap-megoldasok.pdf"
+#   skip_cleanup: true
+#   on:
+#     repo: szenadam/csifz-matalap-megoldasok
