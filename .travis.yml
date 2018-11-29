@@ -20,5 +20,4 @@ deploy:
   file: "matalap-megoldasok.pdf"
   skip_cleanup: true
   on:
-    tags: true
     repo: szenadam/csifz-matalap-megoldasok
