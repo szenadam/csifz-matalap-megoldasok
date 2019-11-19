@@ -1,2 +1,13 @@
-[![Build Status](https://travis-ci.com/szenadam/csifz-matalap-megoldasok.svg?branch=master)](https://travis-ci.com/szenadam/csifz-matalap-megoldasok)
-### MATEMATIKAI ALAPOK - **MEGOLDÁSOK**
+# MATEMATIKAI ALAPOK - **MEGOLDÁSOK**
+
+## Szükséges programok
+
+- Tex Live
+
+## Leírás
+
+Megoldások a "Matematikai Alapok" könyvhöz.
+
+## PDF Generálás
+
+`pdflatex -interaction=nonstopmode -halt-on-error matalap-megoldasok.tex`
